@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登录 · DSE 听力训练</title>
+<style>
+  :root{--brand:#16765f;--brand-d:#0f5e4c;--ink:#17211c;--mut:#66736c;--line:#dfe7e2}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:Inter,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#edf6f1 0,#f6f8f6 60%);color:var(--ink)}
+  .card{width:min(420px,92vw);background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px 28px;box-shadow:0 12px 36px rgba(20,50,40,.08)}
+  h1{margin:0 0 6px;font-size:22px}
+  .sub{color:var(--mut);font-size:14px;margin-bottom:22px;line-height:1.6}
+  label{display:block;font-size:13px;font-weight:600;margin:12px 0 6px}
+  input{width:100%;min-height:42px;border:1px solid #bdcbc4;border-radius:10px;padding:8px 12px;font:inherit}
+  input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 4px rgba(22,118,95,.12)}
+  button{margin-top:18px;width:100%;min-height:44px;border:0;border-radius:11px;background:var(--brand);color:#fff;font-weight:700;font-size:15px;cursor:pointer}
+  button:hover{background:var(--brand-d)}
+  .err{display:none;margin-top:12px;color:#b94141;font-size:13px}
+  .hint{margin-top:16px;font-size:12px;color:var(--mut);line-height:1.6;background:#f4faf7;border-radius:10px;padding:10px 12px}
+</style>
+</head>
+<body>
+  <form class="card" id="form">
+    <h1>DSE 听力训练</h1>
+    <div class="sub">登录后进入 MT56 模拟卷。作答会自动保存；刷新可继续；交卷后成绩由服务器批改并保存。</div>
+    <label for="username">账号</label>
+    <input id="username" name="username" autocomplete="username" required>
+    <label for="password">密码</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <button type="submit">登录并开始做题</button>
+    <div class="err" id="err"></div>
+    <div class="hint">测试账号：<b>student</b> / <b>student123</b>（学生端）<br><b>teacher</b> / <b>teacher123</b>（教师端：成绩看板 + 试卷提取工具）。<br>学生端右上角可选择试卷（MT56 模拟卷 / 2021 DSE Part A）。</div>
+  </form>
+<script>
+document.getElementById("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const err = document.getElementById("err");
+  err.style.display = "none";
+  const body = {
+    username: document.getElementById("username").value,
+    password: document.getElementById("password").value
+  };
+  try {
+    const res = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body)
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "登录失败");
+    location.href = data.user.role === "teacher" ? "/teacher" : "/exam";
+  } catch (ex) {
+    err.textContent = ex.message;
+    err.style.display = "block";
+  }
+});
+</script>
+</body>
+</html>

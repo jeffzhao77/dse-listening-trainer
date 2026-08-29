@@ -1,0 +1,1724 @@
+{
+  "id": "2021HKDSE",
+  "paper": "Paper 3 (Listening & Integrated Skills) — Part A",
+  "title": "2021 HKDSE English Language Paper 3 Part A",
+  "perTaskAudio": true,
+  "totalMarks": 56,
+  "situation": "Bonnie, Cherie and Julian are student interns working for a company called Events Horizon, which organises big public events. Their boss Jasmine Ko has asked them to research World Expos for the company.",
+  "speakers": {
+    "A": "Announcer",
+    "Ch": "Cherie",
+    "Bo": "Bonnie",
+    "Ju": "Julian",
+    "Pr": "Prof Leung",
+    "Le": "Leo"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Task 1 - Research plan for World Expos presentation",
+      "marks": 16,
+      "audio": "audio/2021HKDSE_task1.mp3",
+      "instructions": "Bonnie, Cherie and Julian are discussing a work schedule to carry out the research on World Expos. Listen to the conversation and complete the notesheet below. The first one has been provided as an example.",
+      "tapescript": [
+        {
+          "sp": "Cherie",
+          "t": "OK, I know you've started doing some work for this World Expos presentation we have to do. So I just wanted to check where we are and maybe plan out the next few weeks."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah, I was thinking the same. Jasmine has-"
+        },
+        {
+          "sp": "Julian",
+          "t": "Hold on. Hold on. What was it about again?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Right. Well the title we were given was 'An overview of World Expos.' Remember Julian?"
+        },
+        {
+          "sp": "Julian",
+          "t": "Oh yeah, vaguely. So when is it? The presentation."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Well, that's what I was going to say. Jasmine's now confirmed all the details. So we're presenting on August the 30th. At half past 9."
+        },
+        {
+          "sp": "Julian",
+          "t": "OK. Right... August 30th. At half past 9. That's early then! Wait, is that all three of us presenting?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah, that's what we agreed on."
+        },
+        {
+          "sp": "Julian",
+          "t": "OK, just checking. And who are we presenting to?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Do you never pay attention? We're presenting to all the department heads."
+        },
+        {
+          "sp": "Julian",
+          "t": "All the department heads! Wow, no pressure there then! And where are we presenting?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "The board room. You know the big room on the top floor with the view and..."
+        },
+        {
+          "sp": "Julian",
+          "t": "Yeah, yeah, I know where the board room is. Well, we'd better get going then. How much do we need to get ready? I mean, how long does it have to be?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Well, all three of us will be doing a section. So, I think if we do 5 PowerPoint slides each."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah, that's what I was thinking. 5 slides each. Which is 15 PowerPoint slides in total."
+        },
+        {
+          "sp": "Julian",
+          "t": "So, just to confirm what were the three sections again?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "You are joking aren't you? (pause) Right, I can see you're not. Right, well Bonnie is going to look at the history of World Expos."
+        },
+        {
+          "sp": "Julian",
+          "t": "Oh, I thought you were doing the history of World Expos!"
+        },
+        {
+          "sp": "Cherie",
+          "t": "No, that's Bonnie doing that. You are looking at the good and bad things about World Expos."
+        },
+        {
+          "sp": "Julian",
+          "t": "Yeah, yeah, I remember Jasmine did say she wanted us to find the bad things as well as the good. So, what are you doing, Cherie?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "I'm looking at the future of World Expos, remember? We already read a bit on the future of World Expos online on the webpage."
+        },
+        {
+          "sp": "Julian",
+          "t": "Oh, yeah, OK. I remember."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Right, so what I wanted to do today was to draw up a work schedule. You know, so we know who's doing what and when."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "OK, maybe I can take notes and send you it later."
+        },
+        {
+          "sp": "Julian",
+          "t": "Oh, I was going to say, I was speaking to a friend of mine Leo Roy the other day. You know Leo?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "No, no."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Yeah, I know Leo, remember?"
+        },
+        {
+          "sp": "Julian",
+          "t": "Oh, yeah, of course (laughs). Well, Leo told me his dad worked on the Shanghai Expo in 2010 so I've arranged to meet up with him, his dad, I mean, and interview him."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Fantastic - so when are you meeting him?"
+        },
+        {
+          "sp": "Julian",
+          "t": "Oh, I can't remember. It was either the 8th or 9th of August. Something like that."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "So, which was it? We're trying to do a schedule here."
+        },
+        {
+          "sp": "Julian",
+          "t": "Right, let me check my phone. (Pause). Right, the Wednesday."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Hold on. So you're interviewing Mr. Roy - on Wednesday the 9th of August. Is his surname spelled R-O-Y?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Yes it is!"
+        },
+        {
+          "sp": "Julian",
+          "t": "You were pretty sure about that! (Laughs)."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Hey did you read the email from Jasmine, she said that a Professor Leung at the Hong Kong Metropolitan University is giving a talk about World Expos. One of us should go."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Mm... Do you know when that is?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "I think she said Saturday morning on 19th August. I can't go to it. Bonnie, why don't you go? You could see if we can include some of the information in our presentation on the 30th."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah, great!! Okay, I'll make a note of that. A talk on Expos at the Metropolitan University, on Saturday the 19th."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Great. So, I think we should meet up at some point to talk about all the information we've collected."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Good idea. When'd be a good time for you?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "How about Monday the 21st?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "No, it's a public holiday, remember? How about the day after the public holiday then?"
+        },
+        {
+          "sp": "Julian",
+          "t": "For what? Sorry, I was miles away."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "For the progress meeting."
+        },
+        {
+          "sp": "Julian",
+          "t": "Yeah, fine, yeah."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Yeah, me too. OK, well, then I'm happy to take all the information and do a first draft of the PowerPoint presentation if you like."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Fantastic - thanks, Cerie. When do you think you can get the first draft of the PowerPoint presentation done by? Jasmine said she'd definitely have to see it beforehand."
+        },
+        {
+          "sp": "Cherie",
+          "t": "I can give a first draft to Jasmine on the 23rd. It will take me a few hours to put it all together."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Okay. Give Jasmine the first draft of the PowerPoint presentation on the 23rd of August."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Great. Could we practise the presentation sometime around about then? How about doing it on Saturday 26th? All of us will need to do it. Would that be okay?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah, that's fine with me."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Fantastic. Is that fine with you, Julian?"
+        },
+        {
+          "sp": "Julian",
+          "t": "Sure. No problem. 2021-DSE-ENG LANG 3-TS"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Great - Looks like we are very organised."
+        }
+      ],
+      "blocks": [
+        {
+          "no": 1,
+          "type": "fill",
+          "label": "Date: (1)",
+          "answer": [
+            "August 30 // 30/8"
+          ],
+          "signal": "Jasmine's now confirmed all the details.",
+          "cloze": "So we're presenting on August the 30th.",
+          "ts": {
+            "signal": [
+              98.8,
+              102.88
+            ],
+            "answer": [
+              102.88,
+              108.99
+            ]
+          }
+        },
+        {
+          "no": 2,
+          "type": "fill",
+          "label": "Time: (2)",
+          "answer": [
+            "half past 9 // 9:30 (AM)"
+          ],
+          "signal": "So we're presenting on August the 30th.",
+          "cloze": "At half past 9.",
+          "ts": {
+            "signal": [
+              102.88,
+              108.99
+            ],
+            "answer": [
+              109.8,
+              113.06
+            ]
+          }
+        },
+        {
+          "no": 3,
+          "type": "fill",
+          "label": "Audience: (3)",
+          "answer": [
+            "(all) department heads"
+          ],
+          "signal": "And who are we presenting to?",
+          "cloze": "We're presenting to all the department heads.",
+          "ts": {
+            "signal": [
+              121.28,
+              123.53
+            ],
+            "answer": [
+              125.49,
+              128.86
+            ]
+          }
+        },
+        {
+          "no": 4,
+          "type": "fill",
+          "label": "Venue: (4)",
+          "answer": [
+            "board room"
+          ],
+          "signal": "And where are we presenting?",
+          "cloze": "Yeah, yeah, I know where the board room is.",
+          "ts": {
+            "signal": [
+              132.23,
+              135.32
+            ],
+            "answer": [
+              138.69,
+              138.97
+            ]
+          }
+        },
+        {
+          "no": 5,
+          "type": "fill",
+          "label": "Length: (5)",
+          "answer": [
+            "5 (PowerPoint) slides each // 15 (PowerPoint) slides"
+          ],
+          "signal": "I mean, how long does it have to be?",
+          "cloze": "Which is 15 PowerPoint slides in total.",
+          "ts": {
+            "signal": [
+              147.1,
+              150.06
+            ],
+            "answer": [
+              159.93,
+              164.87
+            ]
+          }
+        },
+        {
+          "no": 6,
+          "type": "fill",
+          "label": "Bonnie: (6) of World Expos",
+          "answer": [
+            "history"
+          ],
+          "signal": "So, just to confirm what were the three sections again?",
+          "cloze": "Right, well Bonnie is going to look at the history of World Expos.",
+          "ts": {
+            "signal": [
+              164.87,
+              168.82
+            ],
+            "answer": [
+              83.5,
+              83.85
+            ]
+          }
+        },
+        {
+          "no": 7,
+          "type": "fill",
+          "label": "Julian: (7) about World Expos",
+          "answer": [
+            "good and bad things"
+          ],
+          "signal": "Oh, I thought you were doing the history of World Expos!",
+          "cloze": "You are looking at the good and bad things about World Expos.",
+          "ts": {
+            "signal": [
+              177.48,
+              181.23
+            ],
+            "answer": [
+              183.25,
+              187.29
+            ]
+          }
+        },
+        {
+          "no": 8,
+          "type": "fill",
+          "label": "Cherie: (8) of World Expos",
+          "answer": [
+            "future"
+          ],
+          "signal": "So, what are you doing, Cherie?",
+          "cloze": "I'm looking at the future of World Expos, remember?",
+          "ts": {
+            "signal": [
+              194.22,
+              196.46
+            ],
+            "answer": [
+              196.46,
+              199.81
+            ]
+          }
+        },
+        {
+          "no": 9,
+          "type": "fill",
+          "label": "Work schedule (9) (date) - Julian",
+          "answer": [
+            "August 9 // 9/8"
+          ],
+          "signal": "Fantastic - so when are you meeting him?",
+          "cloze": "Roy - on Wednesday the 9th of August.",
+          "ts": {
+            "signal": [
+              242,
+              243.95
+            ],
+            "answer": [
+              262.13,
+              265.86
+            ]
+          }
+        },
+        {
+          "no": 10,
+          "type": "fill",
+          "label": "Julian: (10)",
+          "answer": [
+            "interview / meeting (up with) Mr. Roy / Leo's father"
+          ],
+          "signal": "Oh, I was going to say, I was speaking to a friend of mine Leo Roy the other day.",
+          "cloze": "Well, Leo told me his dad worked on the Shanghai Expo in 2010 so I've arranged to meet up with him, his dad, I mean, and interview him.",
+          "ts": {
+            "signal": [
+              206.8,
+              208.2
+            ],
+            "answer": [
+              206.8,
+              208.2
+            ]
+          }
+        },
+        {
+          "no": 11,
+          "type": "fill",
+          "label": "August 19 - Bonnie: (11) at Hong Kong Metropolitan University",
+          "answer": [
+            "go to a talk (by Prof. Leung on expos)"
+          ],
+          "signal": "Bonnie, why don't you go?",
+          "cloze": "A talk on Expos at the Metropolitan University, on Saturday the 19th.",
+          "ts": {
+            "signal": [
+              291.81,
+              293.46
+            ],
+            "answer": [
+              79.38,
+              81.78
+            ]
+          }
+        },
+        {
+          "no": 12,
+          "type": "fill",
+          "label": "(12) - All Progress Meeting",
+          "answer": [
+            "August 22 // 22/8"
+          ],
+          "signal": "How about Monday the 21st?",
+          "cloze": "How about the day after the public holiday then?",
+          "ts": {
+            "signal": [
+              323.26,
+              326.56
+            ],
+            "answer": [
+              91.06,
+              94.73
+            ]
+          }
+        },
+        {
+          "no": 13,
+          "type": "fill",
+          "label": "August 23 - (13) Give Jasmine (14)",
+          "answer": [
+            "C"
+          ],
+          "signal": "OK, well, then I'm happy to take all the information and do a first draft of the PowerPoint presentation if you like.",
+          "cloze": "Fantastic - thanks, Cerie.",
+          "ts": {
+            "signal": [
+              91.06,
+              94.73
+            ],
+            "answer": [
+              349.29,
+              350.28
+            ]
+          }
+        },
+        {
+          "no": 14,
+          "type": "fill",
+          "label": "Give Jasmine (14)",
+          "answer": [
+            "first draft"
+          ],
+          "signal": "Jasmine said she'd definitely have to see it beforehand.",
+          "cloze": "I can give a first draft to Jasmine on the 23rd.",
+          "ts": {
+            "signal": [
+              360.04,
+              361.94
+            ],
+            "answer": [
+              361.94,
+              365.75
+            ]
+          }
+        },
+        {
+          "no": 15,
+          "type": "fill",
+          "label": "August 26 - (15) (16)",
+          "answer": [
+            "All // B, C and J"
+          ],
+          "signal": "How about doing it on Saturday 26th?",
+          "cloze": "All of us will need to do it.",
+          "ts": {
+            "signal": [
+              382.11,
+              385.4
+            ],
+            "answer": [
+              385.4,
+              387.8
+            ]
+          }
+        },
+        {
+          "no": 16,
+          "type": "fill",
+          "label": "(16) (on August 26)",
+          "answer": [
+            "practise / rehearse presentation // rehearsal / practice of presentation"
+          ],
+          "signal": "When do you think you can get the first draft of the PowerPoint presentation done by?",
+          "cloze": "Could we practise the presentation sometime around about then?",
+          "ts": {
+            "signal": [
+              91.06,
+              94.73
+            ],
+            "answer": [
+              91.06,
+              94.73
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Task 2 - A History of World Expos (lecture)",
+      "marks": 15,
+      "audio": "audio/2021HKDSE_task2.mp3",
+      "instructions": "You are attending a lecture by Professor Leung, who is going to talk about the history of World Expos. Listen and fill in the missing information in the space below. One has been provided as an example.",
+      "tapescript": [
+        {
+          "sp": "Prof Leung",
+          "t": "Good evening ladies and gentlemen. Thank you for joining me here this evening. In 2010 Shanghai celebrated the biggest ever World Expo. Millions of people from all over the world came to Shanghai to see the exhibits and innovations the Expo had to offer. It is this coming together of people that makes World Expos so special to me. And that's why the topic of my lecture tonight is 'A history of World Expos: Bringing people together' because Expos do just that, they bring people together. So first, I thought I'd tell you a little bit about what Expos are and then we'll explore the history of World Expos which I shall break into three stages to show you how they developed into the World Expo we know today. So - to begin at the beginning - what exactly are World Expos? Well, World Expos are, quite simply, international exhibitions. One country is the host. Basically the host country has two major things to do. First, it has to decide on a theme for the exhibition. The theme is very important for the Expo as it gives it its focus. Secondly, having decided on a theme, the host has to invite other countries to join the exhibition. So now we know what World Expos are and why we have them, let's move on to the history of World Expos. Basically, World Expos developed in three main stages. The first phase or stage is focused on industrial and technological inventions. This phase began way back in 1851 and really lasted until about 1938. So the very first World Expo was held in 1851, in the wonderful city of London, England. It was called 'the Great Exhibition' and the idea was to promote all the very latest inventions for improving industry and farming. Ten countries, including China, were invited to join in and display their latest technology. 6.3 million visitors came to see the Great Exhibition. It was a truly amazing event. The Great Exhibition had several major achievements but I'd like to highlight two. The first is what people thought was the major achievement of the Great Exhibition at the time, which was they grew the biggest flower in the world. And this flower, the biggest flower was so big a child could stand on its leaf. So, we are talking big. The second major achievement was raising awareness of farming techniques. The increase of awareness of different farming techniques learnt from the Great Expo brought huge benefits to the world. The second stage in the development of World Expos focused on Cultural Exchange. This stage is called 'Cultural Exchange' because from about 1939 to 1987, World Expos focused more on themes that were important culturally. One of the first World Expos of this kind took place in New York, America, in 1939. As I have said before, all World Expos have a particular theme and the theme of this world expo was 'The City of Tomorrow'. To show the city of tomorrow, the New York Expo had huge exhibitions on modern food and displayed the latest works of art from different countries. So it combined different aspects of culture: food and art. Again this was a very popular World Expo. 50 countries took part and over 44 million people went to it. Finally, the third stage in the development of World Expos was really all about Nation Branding. The Nation Branding stage started around 1988 and is still going on now, really. This meant that the host country and all participating countries used the Expo to promote themselves. An example of an Expo in the Nation Branding stage took place in Hanover in Germany. The theme for this Expo was 'Nature and technology'. The idea was to promote environmentally-friendly products and inventions and to look at ways of saving the environment. 155 countries were invited, but unfortunately the number of visitors was lower than what had been expected. Only about 25 million people came to the Expo, so it was considered to be a bit of a failure."
+        }
+      ],
+      "blocks": [
+        {
+          "no": 17,
+          "type": "fill",
+          "label": "Topic: A History of World Expos: (17)",
+          "answer": [
+            "bringing people together"
+          ],
+          "signal": "It is this coming together of people that makes World Expos so special to me.",
+          "cloze": "And that's why the topic of my lecture tonight is 'A history of World Expos: Bringing people together' because Expos do just that, they bring people together.",
+          "ts": {
+            "signal": [
+              83.1,
+              89.98
+            ],
+            "answer": [
+              101.45,
+              103.6
+            ]
+          }
+        },
+        {
+          "no": 18,
+          "type": "fill",
+          "label": "Roles of host countries: (18)",
+          "answer": [
+            "decide (on) a theme"
+          ],
+          "signal": "Basically the host country has two major things to do.",
+          "cloze": "First, it has to decide on a theme for the exhibition.",
+          "ts": {
+            "signal": [
+              136.99,
+              141.7
+            ],
+            "answer": [
+              141.7,
+              146.42
+            ]
+          }
+        },
+        {
+          "no": 19,
+          "type": "fill",
+          "label": "(19)",
+          "answer": [
+            "invite other countries to join"
+          ],
+          "signal": "First, it has to decide on a theme for the exhibition.",
+          "cloze": "Secondly, having decided on a theme, the host has to invite other countries to join the exhibition.",
+          "ts": {
+            "signal": [
+              141.7,
+              146.42
+            ],
+            "answer": [
+              152.14,
+              160.64
+            ]
+          }
+        },
+        {
+          "no": 20,
+          "type": "fill",
+          "label": "Number of visitors: (20)",
+          "answer": [
+            "6.3 million"
+          ],
+          "signal": "Ten countries, including China, were invited to join in and display their latest technology.",
+          "cloze": "6.3 million visitors came to see the Great Exhibition.",
+          "ts": {
+            "signal": [
+              212.04,
+              220.36
+            ],
+            "answer": [
+              220.86,
+              226.75
+            ]
+          }
+        },
+        {
+          "no": 21,
+          "type": "fill",
+          "label": "Major achievements of this Expo: (21)",
+          "answer": [
+            "grew / produced the biggest flower in the world"
+          ],
+          "signal": "It was a truly amazing event.",
+          "cloze": "The first is what people thought was the major achievement of the Great Exhibition at the time, which was they grew the biggest flower in the world.",
+          "ts": {
+            "signal": [
+              226.75,
+              228.92
+            ],
+            "answer": [
+              134.97,
+              136.99
+            ]
+          }
+        },
+        {
+          "no": 22,
+          "type": "fill",
+          "label": "(22)",
+          "answer": [
+            "raised / increased awareness of (different) farming techniques // increase in awareness of (different) farming techniques"
+          ],
+          "signal": "The second major achievement was raising awareness of farming techniques.",
+          "cloze": "The increase of awareness of different farming techniques learnt from the Great Expo brought huge benefits to the world.",
+          "ts": {
+            "signal": [
+              255.3,
+              261.25
+            ],
+            "answer": [
+              261.25,
+              270.04
+            ]
+          }
+        },
+        {
+          "no": 23,
+          "type": "fill",
+          "label": "Stage 2: (23)",
+          "answer": [
+            "cultural exchange"
+          ],
+          "signal": "The increase of awareness of different farming techniques learnt from the Great Expo brought huge benefits to the world.",
+          "cloze": "The second stage in the development of World Expos focused on Cultural Exchange.",
+          "ts": {
+            "signal": [
+              261.25,
+              270.04
+            ],
+            "answer": [
+              270.46,
+              277.47
+            ]
+          }
+        },
+        {
+          "no": 24,
+          "type": "fill",
+          "label": "Period: (24)",
+          "answer": [
+            "1939-1987"
+          ],
+          "signal": "The second stage in the development of World Expos focused on Cultural Exchange.",
+          "cloze": "This stage is called 'Cultural Exchange' because from about 1939 to 1987, World Expos focused more on themes that were important culturally.",
+          "ts": {
+            "signal": [
+              270.46,
+              277.47
+            ],
+            "answer": [
+              277.47,
+              289.98
+            ]
+          }
+        },
+        {
+          "no": 25,
+          "type": "fill",
+          "label": "New York Expo theme: (25)",
+          "answer": [
+            "city of tomorrow"
+          ],
+          "signal": "One of the first World Expos of this kind took place in New York, America, in 1939.",
+          "cloze": "As I have said before, all World Expos have a particular theme and the theme of this world expo was 'The City of Tomorrow'.",
+          "ts": {
+            "signal": [
+              289.98,
+              298.8
+            ],
+            "answer": [
+              298.8,
+              309.28
+            ]
+          }
+        },
+        {
+          "no": 26,
+          "type": "fill",
+          "label": "Examples of exhibits: (26)",
+          "answer": [
+            "(modern) food"
+          ],
+          "signal": "As I have said before, all World Expos have a particular theme and the theme of this world expo was 'The City of Tomorrow'.",
+          "cloze": "So it combined different aspects of culture: food and art.",
+          "ts": {
+            "signal": [
+              298.8,
+              309.28
+            ],
+            "answer": [
+              309.5,
+              326.8
+            ]
+          }
+        },
+        {
+          "no": 27,
+          "type": "fill",
+          "label": "(27)",
+          "answer": [
+            "(latest works of) art // artwork"
+          ],
+          "signal": "As I have said before, all World Expos have a particular theme and the theme of this world expo was 'The City of Tomorrow'.",
+          "cloze": "So it combined different aspects of culture: food and art.",
+          "ts": {
+            "signal": [
+              298.8,
+              309.28
+            ],
+            "answer": [
+              309.5,
+              326.8
+            ]
+          }
+        },
+        {
+          "no": 28,
+          "type": "fill",
+          "label": "Number of countries which took part: (28)",
+          "answer": [
+            "50"
+          ],
+          "signal": "Again this was a very popular World Expo.",
+          "cloze": "50 countries took part and over 44 million people went to it.",
+          "ts": {
+            "signal": [
+              326.8,
+              330.43
+            ],
+            "answer": [
+              330.43,
+              336.36
+            ]
+          }
+        },
+        {
+          "no": 29,
+          "type": "fill",
+          "label": "Stage 3: Nation Branding Period: (29)",
+          "answer": [
+            "1988-now / present / 2021"
+          ],
+          "signal": "Finally, the third stage in the development of World Expos was really all about Nation Branding.",
+          "cloze": "The Nation Branding stage started around 1988 and is still going on now, really.",
+          "ts": {
+            "signal": [
+              336.88,
+              345.33
+            ],
+            "answer": [
+              345.33,
+              351.89
+            ]
+          }
+        },
+        {
+          "no": 30,
+          "type": "fill",
+          "label": "Hanover Expo theme: (30)",
+          "answer": [
+            "nature and technology"
+          ],
+          "signal": "An example of an Expo in the Nation Branding stage took place in Hanover in Germany.",
+          "cloze": "The theme for this Expo was 'Nature and technology'.",
+          "ts": {
+            "signal": [
+              360.92,
+              368.26
+            ],
+            "answer": [
+              368.26,
+              373.42
+            ]
+          }
+        },
+        {
+          "no": 31,
+          "type": "fill",
+          "label": "Reason why considered not to be a success: (31)",
+          "answer": [
+            "only 25 million people came // low(er) number of visitors (than expected)"
+          ],
+          "signal": "155 countries were invited, but unfortunately the number of visitors was lower than what had been expected.",
+          "cloze": "Only about 25 million people came to the Expo, so it was considered to be a bit of a failure.",
+          "ts": {
+            "signal": [
+              382.86,
+              392.17
+            ],
+            "answer": [
+              392.17,
+              400.02
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Task 3 - Feedback on PowerPoint slides",
+      "marks": 12,
+      "audio": "audio/2021HKDSE_task3.mp3",
+      "instructions": "Cherie has just shown Bonnie and Julian a draft of her PowerPoint slides for the presentation. Bonnie and Julian are now giving her some feedback. Listen to the conversation and make notes in the notesheet below. One has been provided as an example.",
+      "tapescript": [
+        {
+          "sp": "Cherie",
+          "t": "Okay, so what do you think?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Well, I think it's brilliant overall. You've done a really good job."
+        },
+        {
+          "sp": "Cherie",
+          "t": "But....I'm sensing a 'but' here! (laughs)"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "But (laughs) Well, I think it might be a bit light on content."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Okay, so I was thinking that as well. We could maybe add a couple more slides. What do you think is missing or could be expanded on?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah, I was wondering if we needed more on the downsides, you know, negatives about organising World Expos. So, I would add a slide on that. Maybe include some key points on the slide. The first one would be something about the millions of dollars wasted on World Expos, and the fact that the money could be better spent."
+        },
+        {
+          "sp": "Julian",
+          "t": "Yeah, I'd include something like that. I mean, the host country has to be prepared to spend millions on creating a World Expo. One of the other downsides we could include is the disruption to life in the host city. You know, World Expos have to be built and existing roads to the Expo site have to be improved or new roads have to be constructed. So, it can cause a lot of disruption for people living in the host city. Another disadvantage we could include is that very often people complain that the Expo buildings are not used again after the end of the Expo."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Really?"
+        },
+        {
+          "sp": "Julian",
+          "t": "Yeah, occasionally the buildings are re-used, but more often than not they are just taken down so, no, they're not re-used."
+        },
+        {
+          "sp": "Cherie",
+          "t": "OK, well I think I can do a slide on that. Is there anything else to include? Another slide maybe?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Well, I think we could include one on the reasons why a city would want to host a World Expo. I don't think that comes across in our slides."
+        },
+        {
+          "sp": "Cherie",
+          "t": "So, what would you include then, Bonnie? What kind of reasons?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Well, there are lots of reasons. The first reason for holding a World Expo would be to promote friendship among different countries. Many different countries work together on each Expo, so it's a wonderful way to promote international friendship. The second reason for holding World Expos is so that different countries that take part in World Expos can build up their national image. You know, countries can show how beautiful their countries are and how friendly their people are. Plus, holding Expos can attract business and tourism."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Right, OK. Got it. I'll include all these points in two extra slides. I'll get the draft ready to give to Jasmine. Thanks guys. Any comments on the presentation, I mean the way it looks and-"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Well, I think generally it's a bit wordy. You know too many words on each slide. So, could we take out some of the writing?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "OK, less writing, right. Hang on, let me get my lap top to write these comments down so I don't forget. (Pause). OK."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "That would help definitely. Plus I was thinking we could put in more visuals, you know, more pictures. I think it would make the presentation look much more interesting. What do you think?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Sure. I can add more visuals."
+        },
+        {
+          "sp": "Julian",
+          "t": "Yeah, another point I thought of was to change the background colour to light blue. White looks a bit boring, so why not have a light blue background instead of white, so it looks more colourful?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah, I had a similar comment I'd noted down. What do you think, Cherie?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Yep, fine. I was actually going to do that anyway in the next draft. Okay, so change the background colour to light blue. What else?"
+        },
+        {
+          "sp": "Julian",
+          "t": "Another point is maybe put all the main headings in red instead of having all the writing in black just to make it look more interesting."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Yeah, good idea. So 'put headings in red'."
+        },
+        {
+          "sp": "Julian",
+          "t": "Another point is the size of the writing. I think it's a bit small - can we make it bigger so it's easier for the audience to read?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Mmm, so 'make the writing bigger'."
+        },
+        {
+          "sp": "Julian",
+          "t": "How about changing the font too? I always think Times New Roman looks so old-fashioned. Can we make it more, you know, 'up-to-date' looking?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Okay, change the font to make it look more modern. Actually, in relation to that - I was wondering whether we should use numbers or bullet points. In the end, I used numbers, but do you think bullet points would look better?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Yeah I do - less formal and more visual -"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Okay, so change numbers to bullet points. Right, OK. Got it. I'll get the draft ready to give to Jasmine then. Thanks guys."
+        }
+      ],
+      "blocks": [
+        {
+          "no": 32,
+          "type": "fill",
+          "label": "Downsides of having an Expo (32)",
+          "answer": [
+            "millions of dollars (are) spent / wasted"
+          ],
+          "signal": "Yeah, I was wondering if we needed more on the downsides, you know, negatives about organising World Expos.",
+          "cloze": "The first one would be something about the millions of dollars wasted on World Expos, and the fact that the money could be better spent.",
+          "ts": {
+            "signal": [
+              93.79,
+              102.11
+            ],
+            "answer": [
+              107.66,
+              116.95
+            ]
+          }
+        },
+        {
+          "no": 33,
+          "type": "fill",
+          "label": "(33)",
+          "answer": [
+            "disruption to life in the (host) city / for people living in the (host) city / of the (host) city"
+          ],
+          "signal": "I mean, the host country has to be prepared to spend millions on creating a World Expo.",
+          "cloze": "One of the other downsides we could include is the disruption to life in the host city.",
+          "ts": {
+            "signal": [
+              119.21,
+              124.48
+            ],
+            "answer": [
+              124.48,
+              130.43
+            ]
+          }
+        },
+        {
+          "no": 34,
+          "type": "fill",
+          "label": "(34)",
+          "answer": [
+            "(expo) buildings (are) not re-used / used again"
+          ],
+          "signal": "Another disadvantage we could include is that very often people complain that the Expo buildings are not used again after the end of the Expo.",
+          "cloze": "Yeah, occasionally the buildings are re-used, but more often than not they are just taken down so, no, they're not re-used.",
+          "ts": {
+            "signal": [
+              142.92,
+              152.91
+            ],
+            "answer": [
+              159.39,
+              161.28
+            ]
+          }
+        },
+        {
+          "no": 35,
+          "type": "fill",
+          "label": "To promote (35)",
+          "answer": [
+            "friendship among different countries // international friendship"
+          ],
+          "signal": "Well, there are lots of reasons.",
+          "cloze": "The first reason for holding a World Expo would be to promote friendship among different countries.",
+          "ts": {
+            "signal": [
+              182.08,
+              184.08
+            ],
+            "answer": [
+              184.08,
+              191.2
+            ]
+          }
+        },
+        {
+          "no": 36,
+          "type": "fill",
+          "label": "To attract (36)",
+          "answer": [
+            "business and tourism"
+          ],
+          "signal": "You know, countries can show how beautiful their countries are and how friendly their people are.",
+          "cloze": "Plus, holding Expos can attract business and tourism.",
+          "ts": {
+            "signal": [
+              208.72,
+              215.4
+            ],
+            "answer": [
+              215.4,
+              220.77
+            ]
+          }
+        },
+        {
+          "no": 37,
+          "type": "fill",
+          "label": "Suggestions for layout (37)",
+          "answer": [
+            "take out some (of the) writing / words // less writing"
+          ],
+          "signal": "You know too many words on each slide.",
+          "cloze": "So, could we take out some of the writing?",
+          "ts": {
+            "signal": [
+              233.19,
+              241.58
+            ],
+            "answer": [
+              241.58,
+              245.19
+            ]
+          }
+        },
+        {
+          "no": 38,
+          "type": "fill",
+          "label": "(38)",
+          "answer": [
+            "(add more) visuals / pictures"
+          ],
+          "signal": "Plus I was thinking we could put in more visuals, you know, more pictures.",
+          "cloze": "I can add more visuals.",
+          "ts": {
+            "signal": [
+              255.68,
+              261.59
+            ],
+            "answer": [
+              268.48,
+              270.78
+            ]
+          }
+        },
+        {
+          "no": 39,
+          "type": "fill",
+          "label": "(39)",
+          "answer": [
+            "(change) background (colour) to light blue"
+          ],
+          "signal": "Yeah, another point I thought of was to change the background colour to light blue.",
+          "cloze": "Okay, so change the background colour to light blue.",
+          "ts": {
+            "signal": [
+              270.78,
+              271.07
+            ],
+            "answer": [
+              298.51,
+              298.8
+            ]
+          }
+        },
+        {
+          "no": 40,
+          "type": "fill",
+          "label": "(40)",
+          "answer": [
+            "(put) headings in red"
+          ],
+          "signal": "What else?",
+          "cloze": "Another point is maybe put all the main headings in red instead of having all the writing in black just to make it look more interesting.",
+          "ts": {
+            "signal": [
+              298.8,
+              299.39
+            ],
+            "answer": [
+              299.39,
+              309.28
+            ]
+          }
+        },
+        {
+          "no": 41,
+          "type": "fill",
+          "label": "(41)",
+          "answer": [
+            "make the writing / font bigger (so it's easier to read) // bigger writing / font"
+          ],
+          "signal": "Another point is the size of the writing.",
+          "cloze": "I think it's a bit small - can we make it bigger so it's easier for the audience to read?",
+          "ts": {
+            "signal": [
+              311.9,
+              314.82
+            ],
+            "answer": [
+              220.77,
+              221.78
+            ]
+          }
+        },
+        {
+          "no": 42,
+          "type": "fill",
+          "label": "(42)",
+          "answer": [
+            "change the font / letter style to make it look more up to date / modern"
+          ],
+          "signal": "How about changing the font too?",
+          "cloze": "Okay, change the font to make it look more modern.",
+          "ts": {
+            "signal": [
+              323.61,
+              326.3
+            ],
+            "answer": [
+              333.78,
+              337.37
+            ]
+          }
+        },
+        {
+          "no": 43,
+          "type": "fill",
+          "label": "(43)",
+          "answer": [
+            "(change) numbers to bullet points // (use) bullet points instead of numbers"
+          ],
+          "signal": "Actually, in relation to that - I was wondering whether we should use numbers or bullet points.",
+          "cloze": "Okay, so change numbers to bullet points.",
+          "ts": {
+            "signal": [
+              337.37,
+              344.85
+            ],
+            "answer": [
+              354.72,
+              358.61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Task 4 - Ota Benga and the dark side of World Expos",
+      "marks": 13,
+      "audio": "audio/2021HKDSE_task4.mp3",
+      "instructions": "Julian, Bonnie and Cherie have met up with their friend Leo at a cafe. They are talking about the group's presentation and World Expos. Listen to the conversation and answer the questions below. You do not need to answer in complete sentences. One has been provided as an example.",
+      "tapescript": [
+        {
+          "sp": "Leo",
+          "t": "OK, right I've got my cappuccino. Anybody else want anything?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "No thanks."
+        },
+        {
+          "sp": "Cherie",
+          "t": "No, no."
+        },
+        {
+          "sp": "Julian",
+          "t": "No, thanks Leo, how you doing anyway?"
+        },
+        {
+          "sp": "Leo",
+          "t": "I'm OK."
+        },
+        {
+          "sp": "Julian",
+          "t": "Good."
+        },
+        {
+          "sp": "Leo",
+          "t": "Right, well, I remembered you said to look out for some stuff about Expos, so I asked my dad and he sent me a link on YouTube. I thought it might be quite interesting for you. You - you did say you were looking into the negative aspects of World Expos and trade fairs so this you might call that the dark side of the history."
+        },
+        {
+          "sp": "Julian",
+          "t": "Really?"
+        },
+        {
+          "sp": "Leo",
+          "t": "Yeah, the clip was basically about the experiences of this one African man called Ota Benga. The clip started off giving a pretty interesting insight into these World Exhibitions. They said the main function of these expos for ordinary people wasn't trade or science but rather it was the only way that normal people could see things from around the world. Very few people could travel abroad in those days, of course."
+        },
+        {
+          "sp": "Julian",
+          "t": "Yeah, I'd never thought of that."
+        },
+        {
+          "sp": "Leo",
+          "t": "Yeah, so that was one thing. But there was also this other more sinister, darker side of the Expos and fairs where they exhibited humans from different parts of the world, like in a human zoo. They reckon that more than 35,000 men, women and children were exhibited in these types of human zoos at various Expos in Paris, London, you know, the USA... at the end of the 19th and into the 20th Century."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Really? What did they make these people do in these human zoos?"
+        },
+        {
+          "sp": "Leo",
+          "t": "Well, once there, they had to like live - they lived in traditional houses. These traditional houses were built especially there. And these people, they did the cooking and so on. And people watched them like they watch monkeys at a zoo. And at certain times of the day, they put on some sort of exotic show. Doing some dances or religious rituals, that sort of thing."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Wow, so it was really like the dolphin show at Ocean Park, then."
+        },
+        {
+          "sp": "Leo",
+          "t": "Yeah, pretty much. The most famous of these people who was in one of these human zoos, was an African man named Ota Benga. He was a pygmy."
+        },
+        {
+          "sp": "Cherie",
+          "t": "A what?"
+        },
+        {
+          "sp": "Leo",
+          "t": "A pygmy, you know, a tribe from Western Africa who were smaller than average humans."
+        },
+        {
+          "sp": "Cherie",
+          "t": "Oh yeah, right."
+        },
+        {
+          "sp": "Leo",
+          "t": "And that was the point. That's why he was there."
+        },
+        {
+          "sp": "Julian",
+          "t": "What? Because he was a pygmy?"
+        },
+        {
+          "sp": "Leo",
+          "t": "Yeah. You see, for the 1904 Great World Fair in St Louis in the USA, there was this American scientist called W.J. McGee. Now, McGee wanted to put on a spectacular exhibition of human kind. He wanted to exhibit the most extreme examples of man from around the world: the tallest, the smallest. That sort of thing. So he got the smallest people from Africa. And that was Ota Benga. He was from the tribe of pygmies - the smallest people in the world. So, McGee sent this explorer on a huge expedition to Africa to find pygmies and bring them back. So, he did. He brought back Ota Benga and five other pygmies."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Wow."
+        },
+        {
+          "sp": "Julian",
+          "t": "That's amazing."
+        },
+        {
+          "sp": "Leo",
+          "t": "Yeah, I know, the irony was that Ota Benga and his fellow tribespeople thought that they were in the USA to show off their own culture, whereas, in fact, what they were advertised to the public and scientists as was the most primitive people on the planet."
+        },
+        {
+          "sp": "Cherie",
+          "t": "That's terrible."
+        },
+        {
+          "sp": "Julian",
+          "t": "And what happened after the fair ended?"
+        },
+        {
+          "sp": "Leo",
+          "t": "Well, after the end of the fair, Ota went to New York. You imagine this little African guy in New York? You know, with all its skyscrapers and hi-tech lifestyle."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "So, what did he do in New York? Did he work or?"
+        },
+        {
+          "sp": "Leo",
+          "t": "Well, sort of. He then became famous cuz he got a job at a zoo in New York. He thought he was going to look after the elephants, but he was actually given a job to be a live exhibit in the zoo. He shared a cage with a chimpanzee."
+        },
+        {
+          "sp": "Cherie",
+          "t": "That's awful."
+        },
+        {
+          "sp": "Leo",
+          "t": "Well, to be fair to people in New York, they did protest and write to the newspapers complaining about it."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "So, what happened?"
+        },
+        {
+          "sp": "Leo",
+          "t": "The exhibition was stopped after about a week."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "Good. So, then what happened to him?"
+        },
+        {
+          "sp": "Leo",
+          "t": "Well, it just got worse and worse for Ota. He then tried to settle in America and even ended up working in a tobacco factory, in a small town in the US. But he was so homesick that he wanted to return to Africa but he didn't have enough money to pay for the journey, so in the end he never returned to Africa."
+        },
+        {
+          "sp": "Julian",
+          "t": "That's terrible. No wonder it's not very well known."
+        },
+        {
+          "sp": "Bonnie",
+          "t": "That is a truly horrendous story, Leo."
+        },
+        {
+          "sp": "Cherie",
+          "t": "God, how can you treat somebody like that?"
+        },
+        {
+          "sp": "Leo",
+          "t": "So, are you going to include it in the presentation?"
+        },
+        {
+          "sp": "Julian",
+          "t": "What do you think, Bonnie?"
+        },
+        {
+          "sp": "Bonnie",
+          "t": "I think we should. Jasmine wanted the full picture, so this gives them the full picture of the history of these types of Expos, that's for sure."
+        },
+        {
+          "sp": "Julian",
+          "t": "Mm. Cherie?"
+        },
+        {
+          "sp": "Cherie",
+          "t": "Well, I'm not so keen. I mean, you have to remember that a couple of the audience when we present are actually American, from the USA. I mean, we don't want to offend anybody with our presentation, do we? What do you think, Julian?"
+        },
+        {
+          "sp": "Julian",
+          "t": "Well, I think we should. But only the first half of his story is directly relevant to expos. His experiences in New York and the zoo are less relevant. So, just including the first half would keep it relevant."
+        }
+      ],
+      "blocks": [
+        {
+          "no": 44,
+          "type": "fill",
+          "label": "What, according to Leo, was the main function of World Expos for ordinary people? (44)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "(only way) (normal) people / they could see things from around the world"
+          ],
+          "signal": "The clip started off giving a pretty interesting insight into these World Exhibitions.",
+          "cloze": "They said the main function of these expos for ordinary people wasn't trade or science but rather it was the only way that normal people could see things from around the world.",
+          "ts": {
+            "signal": [
+              112.2,
+              118.95
+            ],
+            "answer": [
+              118.95,
+              130.28
+            ]
+          }
+        },
+        {
+          "no": 45,
+          "type": "fill",
+          "label": "How many people were exhibited in human zoos at the end of the 19th Century and beginning of the 20th Century? (45)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "(more than) 35,000"
+          ],
+          "signal": "But there was also this other more sinister, darker side of the Expos and fairs where they exhibited humans from different parts of the world, like in a human zoo.",
+          "cloze": "They reckon that more than 35,000 men, women and children were exhibited in these types of human zoos at various Expos in Paris, London, you know, the USA...",
+          "ts": {
+            "signal": [
+              137.84,
+              151.56
+            ],
+            "answer": [
+              151.56,
+              170.26
+            ]
+          }
+        },
+        {
+          "no": 46,
+          "type": "fill",
+          "label": "Name activities that people exhibited in human zoos had to do. (46)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "cooking"
+          ],
+          "signal": "What did they make these people do in these human zoos?",
+          "cloze": "And these people, they did the cooking and so on.",
+          "ts": {
+            "signal": [
+              170.26,
+              175.38
+            ],
+            "answer": [
+              184.86,
+              188.65
+            ]
+          }
+        },
+        {
+          "no": 47,
+          "type": "fill",
+          "label": "(47)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "(put on an) exotic show(s) // dancing // danced // religious rituals"
+          ],
+          "signal": "And people watched them like they watch monkeys at a zoo.",
+          "cloze": "Doing some dances or religious rituals, that sort of thing.",
+          "ts": {
+            "signal": [
+              188.65,
+              193.39
+            ],
+            "answer": [
+              193.39,
+              203.18
+            ]
+          }
+        },
+        {
+          "no": 48,
+          "type": "fill",
+          "label": "Why was Ota Benga and his tribespeople chosen by WJ McGee for the St. Louis Expo of 1904? (48)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "McGee wanted (to exhibit) the most extreme examples of man / the smallest (and the tallest) men / people in the world // they were smaller than average humans // they were pygmies // pygmies are the smallest people in the world // Ota Benga was a pygmy"
+          ],
+          "signal": "Now, McGee wanted to put on a spectacular exhibition of human kind.",
+          "cloze": "So he got the smallest people from Africa.",
+          "ts": {
+            "signal": [
+              235.52,
+              245.64
+            ],
+            "answer": [
+              260.2,
+              264.95
+            ]
+          }
+        },
+        {
+          "no": 49,
+          "type": "fill",
+          "label": "The pygmies thought (49)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "they were showing (off) their culture"
+          ],
+          "signal": "He brought back Ota Benga and five other pygmies.",
+          "cloze": "Yeah, I know, the irony was that Ota Benga and his fellow tribespeople thought that they were in the USA to show off their own culture, whereas, in fact, what they were advertised to the public and scientists as was the most primitive people on the planet.",
+          "ts": {
+            "signal": [
+              279.59,
+              283.48
+            ],
+            "answer": [
+              228.89,
+              230.64
+            ]
+          }
+        },
+        {
+          "no": 50,
+          "type": "fill",
+          "label": "but actually (50)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "they were advertised as / McGee wanted to show the most primitive (people in the planet)"
+          ],
+          "signal": "He brought back Ota Benga and five other pygmies.",
+          "cloze": "Yeah, I know, the irony was that Ota Benga and his fellow tribespeople thought that they were in the USA to show off their own culture, whereas, in fact, what they were advertised to the public and scientists as was the most primitive people on the planet.",
+          "ts": {
+            "signal": [
+              279.59,
+              283.48
+            ],
+            "answer": [
+              228.89,
+              230.64
+            ]
+          }
+        },
+        {
+          "no": 51,
+          "type": "fill",
+          "label": "What was Ota Benga's job in the zoo in New York? (51)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "(be) a live exhibit (in the zoo)"
+          ],
+          "signal": "So, what did he do in New York?",
+          "cloze": "He thought he was going to look after the elephants, but he was actually given a job to be a live exhibit in the zoo.",
+          "ts": {
+            "signal": [
+              232.73,
+              233.08
+            ],
+            "answer": [
+              218.48,
+              219.84
+            ]
+          }
+        },
+        {
+          "no": 52,
+          "type": "fill",
+          "label": "How did the people of New York react? (52)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "protested // complained // wrote to newspaper"
+          ],
+          "signal": "He shared a cage with a chimpanzee.",
+          "cloze": "Well, to be fair to people in New York, they did protest and write to the newspapers complaining about it.",
+          "ts": {
+            "signal": [
+              219.84,
+              221.22
+            ],
+            "answer": [
+              346.32,
+              354.29
+            ]
+          }
+        },
+        {
+          "no": 53,
+          "type": "fill",
+          "label": "Did Ota Benga's story have a happy ending? Why/Why not? (53)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "No, he never returned to Africa / home // No, he did not have enough money to go back to Africa / home"
+          ],
+          "signal": "Well, it just got worse and worse for Ota.",
+          "cloze": "But he was so homesick that he wanted to return to Africa but he didn't have enough money to pay for the journey, so in the end he never returned to Africa.",
+          "ts": {
+            "signal": [
+              360.83,
+              363.39
+            ],
+            "answer": [
+              278.53,
+              279.59
+            ]
+          }
+        },
+        {
+          "no": 54,
+          "type": "fill",
+          "label": "Bonnie: Should it be included? (54)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "Yes, it gives the full picture (of the history of expos)"
+          ],
+          "signal": "What do you think, Bonnie?",
+          "cloze": "Jasmine wanted the full picture, so this gives them the full picture of the history of these types of Expos, that's for sure.",
+          "ts": {
+            "signal": [
+              232.73,
+              233.08
+            ],
+            "answer": [
+              251.6,
+              260.2
+            ]
+          }
+        },
+        {
+          "no": 55,
+          "type": "fill",
+          "label": "Cherie: Should it be included? (55)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "No, it might offend Americans (in the audience)"
+          ],
+          "signal": "I mean, you have to remember that a couple of the audience when we present are actually American, from the USA.",
+          "cloze": "I mean, we don't want to offend anybody with our presentation, do we?",
+          "ts": {
+            "signal": [
+              415.05,
+              423.41
+            ],
+            "answer": [
+              423.41,
+              428.78
+            ]
+          }
+        },
+        {
+          "no": 56,
+          "type": "fill",
+          "label": "Julian: Should it be included? (56)",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "Yes, but only first half / part is relevant"
+          ],
+          "signal": "His experiences in New York and the zoo are less relevant.",
+          "cloze": "So, just including the first half would keep it relevant.",
+          "ts": {
+            "signal": [
+              430.57,
+              441.32
+            ],
+            "answer": [
+              441.32,
+              445.88
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

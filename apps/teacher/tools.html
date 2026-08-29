@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教师端 · 试卷提取工具</title>
+<style>
+  :root{--bg:#f6f8f6;--card:#fff;--ink:#17211c;--mut:#66736c;--line:#dfe7e2;--brand:#16765f;--brand-d:#0f5e4c;--bad:#b94141;--badbg:#fff0ee;--warn:#a76415}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#edf6f1 0,#f6f8f6 300px);color:var(--ink);font-size:14px}
+  header{background:#123d33;padding:20px 24px 26px}
+  .header-inner{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  header h1{margin:0;color:#fff;font-size:20px}
+  header .sub{color:rgba(255,255,255,.75);font-size:12.5px;margin-top:4px}
+  .wrap{max-width:1080px;margin:0 auto;padding:18px}
+  .tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .tab{border-radius:9px;padding:9px 16px;border:1px solid var(--line);background:#fff;font-weight:700;cursor:pointer;font-size:13.5px}
+  .tab.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:16px;box-shadow:0 1px 4px rgba(20,50,40,.05)}
+  .panel h2{margin:0 0 12px;font-size:15px}
+  .panel h2 .hint{font-size:11.5px;color:var(--mut);font-weight:500}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+  .row label{width:150px;color:var(--mut);font-size:12.5px;font-weight:600}
+  input[type=text],select{border-radius:9px;font-size:13px;padding:8px 11px;border:1px solid var(--line);background:#fff;color:var(--ink);min-width:260px}
+  input[type=file]{font-size:12.5px}
+  .btn{border-radius:9px;font-size:13px;padding:9px 16px;border:none;background:var(--brand);color:#fff;font-weight:700;cursor:pointer}
+  .btn:hover{background:var(--brand-d)}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+  .btn.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+  .btn.out{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.25)}
+  .hint-line{font-size:12px;color:var(--mut);margin:2px 0 10px;line-height:1.6}
+  .uploaded{font-size:12px;color:var(--brand);font-weight:700}
+  pre.log{background:#0f1a16;color:#c9e6d9;border-radius:10px;padding:12px 14px;font-size:12px;max-height:320px;overflow:auto;white-space:pre-wrap;word-break:break-all;margin:0}
+  .status{display:inline-block;border-radius:7px;padding:2px 10px;font-size:12px;font-weight:700;margin-left:8px}
+  .status.running{background:var(--badbg);color:var(--bad)} .status.done{background:#e9f7f1;color:var(--brand)} .status.failed{background:var(--badbg);color:var(--bad)}
+  .empty{color:var(--mut);text-align:center;padding:20px 0;font-size:13px}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:10px 18px;border-radius:10px;font-size:13px;z-index:99;opacity:0;transition:.2s;pointer-events:none}
+  .toast.show{opacity:1}
+  .chk{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--mut)}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div>
+      <h1>试卷提取工具链</h1>
+      <div class="sub">① 音频对齐 → ② 自动剪裁 → ③ AI 提取配对（全部后台任务，可离开页面）</div>
+    </div>
+    <div class="row" style="margin:0">
+      <button class="btn out" onclick="location.href='/teacher'">← 返回看板</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="tabs">
+    <div class="tab" data-tab="test">⓪ API 自测</div>
+    <div class="tab on" data-tab="align">① 音频对齐</div>
+    <div class="tab" data-tab="split">② 自动剪裁</div>
+    <div class="tab" data-tab="extract">③ AI 提取配对</div>
+  </div>
+
+  <!-- ⓪ API 连通性自测 -->
+  <div class="panel" id="tab-test" style="display:none">
+    <h2>API 连通性自测 <span class="hint">拿到中转站 key 后先测这个：转写 + 对话是否可用</span></h2>
+    <div class="hint-line">会切 30 秒音频调一次转写（省额度），再调一次对话。两项都 ✓ 就能正常使用工具链。</div>
+    <div class="row"><label>Base URL</label><input type="text" id="ttBaseUrl" placeholder="https://xxx.com/v1" style="min-width:300px"></div>
+    <div class="row"><label>API Key</label><input type="text" id="ttApiKey" placeholder="sk-..." style="min-width:300px"></div>
+    <div class="row"><label>转写模型</label><input type="text" id="ttModel" value="whisper-1" style="min-width:200px"></div>
+    <div class="row"><label>对话模型</label><input type="text" id="ttChatModel" value="gpt-4o-mini" style="min-width:200px"></div>
+    <div class="row"><label></label><button class="btn" id="ttGo">开始自测</button></div>
+    <div id="ttTask"></div>
+  </div>
+
+  <!-- ① 音频对齐 -->
+  <div class="panel" id="tab-align">
+    <h2>音频分句 + 真实文本对齐 <span class="hint">Whisper 转写完整录音，用题库 JSON 的 tapescript 逐句对齐 → 集成文件（句子↔时间↔说话人）</span></h2>
+    <div class="hint-line">转写约需 4-20 分钟（取决于录音长度），任务在服务器后台运行，页面可关闭。可复用已有转写避免重复识别。</div>
+    <div class="row"><label>完整录音（mp3）</label><input type="file" id="alignAudio" accept="audio/*"><span class="uploaded" id="alignAudioInfo"></span></div>
+    <div class="row"><label>题库 JSON（含 tapescript）</label><input type="file" id="alignJson" accept=".json"><span class="uploaded" id="alignJsonInfo"></span></div>
+    <div class="row"><label>转写引擎</label>
+      <select id="alignAsr">
+        <option value="local">本地 whisper.cpp（免费，慢：CPU 约 1×音频时长）</option>
+        <option value="cloud">云端 OpenAI Whisper API（按量付费，需 key）</option>
+        <option value="dashscope">阿里云 DashScope 语音识别（异步，需开通）</option>
+      </select>
+    </div>
+    <div class="row" id="cloudRow" style="display:none"><label>API Key / Base URL / 模型</label>
+      <input type="text" id="alignKey" placeholder="sk-...（DashScope 或 OpenAI 兼容 key）" style="min-width:220px">
+      <input type="text" id="alignBaseUrl" placeholder="https://dashscope.aliyuncs.com 或 ws-专属网关" style="min-width:200px">
+      <input type="text" id="alignModel" placeholder="qwen3-asr-flash-filetrans / whisper-1" style="min-width:120px">
+    </div>
+    <div class="row"><label></label><span class="chk"><input type="checkbox" id="alignSkipAsr"> 复用已有转写（--skip-asr）</span></div>
+    <div class="row"><label></label><button class="btn" id="alignGo">开始对齐</button></div>
+    <div id="alignTask"></div>
+  </div>
+
+  <!-- ② 自动剪裁 -->
+  <div class="panel" id="tab-split" style="display:none">
+    <h2>按 Task 边界自动剪裁 <span class="hint">读集成文件里的 Task 起止 → ffmpeg 切出 <prefix>_taskN.mp3</span></h2>
+    <div class="hint-line">默认输出到 MT56-PartA-学生完整包/audio/；命名与题库 JSON 的 task.audio 一致。</div>
+    <div class="row"><label>集成文件 aligned.json</label><input type="file" id="splitAligned" accept=".json"><span class="uploaded" id="splitAlignedInfo"></span></div>
+    <div class="row"><label>完整录音（可选）</label><input type="file" id="splitAudio" accept="audio/*"><span class="uploaded" id="splitAudioInfo"></span></div>
+    <div class="row"><label>卷 id（文件名前缀）</label><input type="text" id="splitPrefix" placeholder="如 mt56 / 2023A"></div>
+    <div class="row"><label>边界前后补秒</label><input type="text" id="splitPadding" value="0.5"></div>
+    <div class="row"><label></label><button class="btn" id="splitGo">开始剪裁</button></div>
+    <div id="splitTask"></div>
+  </div>
+
+  <!-- ③ AI 提取配对 -->
+  <div class="panel" id="tab-extract" style="display:none">
+    <h2>OCR 题目文本 → 题库 JSON <span class="hint">文字理解配对答案/题目，可结合集成文件填 ts（独立 AI 服务，provider 可换）</span></h2>
+    <div class="hint-line">mock 不需要 key（启发式占位，仅演示流程）；openai 兼容任意 /chat/completions 服务（DeepSeek/通义等填 base-url）。</div>
+    <div class="row"><label>OCR 题目文本（txt）</label><input type="file" id="exOcr" accept=".txt"><span class="uploaded" id="exOcrInfo"></span></div>
+    <div class="row"><label>meta JSON（可选）</label><input type="file" id="exMeta" accept=".json"><span class="uploaded" id="exMetaInfo"></span></div>
+    <div class="row"><label>集成文件（可选）</label><input type="file" id="exAligned" accept=".json"><span class="uploaded" id="exAlignedInfo"></span></div>
+    <div class="row"><label>Provider</label>
+      <select id="exProvider"><option value="mock">mock（无需 key）</option><option value="openai">openai（需 base-url/key）</option></select>
+    </div>
+    <div class="row"><label>Base URL</label><input type="text" id="exBaseUrl" placeholder="如 https://api.deepseek.com/v1"></div>
+    <div class="row"><label>API Key</label><input type="text" id="exApiKey" placeholder="sk-..."></div>
+    <div class="row"><label>模型</label><input type="text" id="exModel" placeholder="如 deepseek-chat / gpt-4o-mini"></div>
+    <div class="row"><label></label><button class="btn" id="exGo">开始提取</button></div>
+    <div id="exTask"></div>
+  </div>
+
+  <div class="panel">
+    <h2>任务运行日志 <span class="hint">自动刷新最近 200 行</span></h2>
+    <div id="tasklist"><div class="empty">暂无任务</div></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let pollers = {};
+
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+// ---- Tab 切换 ----
+document.querySelectorAll(".tab").forEach((tab) => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("on", x === tab));
+    ["test", "align", "split", "extract"].forEach((k) => {
+      $("tab-" + k).style.display = k === tab.dataset.tab ? "" : "none";
+    });
+  });
+});
+
+// ---- ⓪ API 自测 ----
+$("ttGo").addEventListener("click", () => {
+  $("ttTask").innerHTML = taskBox("test-api", "API 连通性自测");
+  const baseUrl = $("ttBaseUrl").value.trim();
+  const apiKey = $("ttApiKey").value.trim();
+  if (!baseUrl || !apiKey) { toast("❌ 请填 Base URL 和 API Key"); return; }
+  startTask("test-api", {
+    baseUrl,
+    apiKey,
+    model: $("ttModel").value.trim() || undefined,
+    chatModel: $("ttChatModel").value.trim() || undefined,
+  }, $("ttGo"));
+});
+
+// ---- 上传 ----
+async function upload(input, infoEl) {
+  const f = input.files[0];
+  if (!f) return null;
+  const fd = new FormData();
+  fd.append("file", f);
+  const r = await fetch("/api/tools/upload", { method: "POST", body: fd });
+  const d = await r.json();
+  if (!d.ok) throw new Error(d.error || "上传失败");
+  infoEl.textContent = "✓ " + f.name + " → " + d.path;
+  return d.path;
+}
+
+// ---- 任务启动 + 轮询 ----
+function startTask(kind, body, goBtn) {
+  goBtn.disabled = true;
+  fetch("/api/tools/" + kind, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  })
+    .then((r) => r.json())
+    .then((d) => {
+      if (!d.ok) throw new Error(d.error || "启动失败");
+      toast("任务已启动 #" + d.task.id);
+      poll(d.task.id, kind, goBtn);
+    })
+    .catch((e) => {
+      toast("❌ " + e.message);
+      goBtn.disabled = false;
+    });
+}
+
+function poll(id, kind, goBtn) {
+  if (pollers[id]) clearInterval(pollers[id]);
+  const box = $("log-" + kind);
+  const st = $("st-" + kind);
+  pollers[id] = setInterval(async () => {
+    try {
+      const r = await fetch("/api/tools/tasks/" + id + "?lines=200");
+      const d = await r.json();
+      if (!d.ok) throw new Error(d.error);
+      box.textContent = d.tail || "";
+      box.scrollTop = box.scrollHeight;
+      st.textContent = d.task.status === "running" ? "运行中…" : d.task.status === "done" ? "✓ 完成" : "✗ 失败";
+      st.className = "status " + d.task.status;
+      if (d.task.status !== "running") {
+        clearInterval(pollers[id]);
+        delete pollers[id];
+        if (goBtn) goBtn.disabled = false;
+        refreshTasks();
+        if (d.task.status === "done") toast("任务 #" + id + " 完成 ✓");
+      }
+    } catch (e) {
+      clearInterval(pollers[id]);
+      delete pollers[id];
+      if (goBtn) goBtn.disabled = false;
+    }
+  }, 3000);
+  // 立即拉一次
+  setTimeout(() => pollers[id] && fetch("/api/tools/tasks/" + id + "?lines=200").then((r) => r.json()).then((d) => { if (d.ok) { box.textContent = d.tail || ""; box.scrollTop = box.scrollHeight; } }), 500);
+}
+
+function taskBox(kind, label) {
+  return `<div class="panel" style="margin-top:12px;background:#fafcfa">
+    <h2>${label} <span class="status running" id="st-${kind}">等待启动</span></h2>
+    <pre class="log" id="log-${kind}">（日志将在启动后显示）</pre>
+  </div>`;
+}
+
+// ---- ① 对齐 ----
+$("alignAsr").addEventListener("change", () => {
+  const v = $("alignAsr").value;
+  $("cloudRow").style.display = v === "cloud" || v === "dashscope" ? "" : "none";
+});
+$("alignGo").addEventListener("click", async () => {
+  $("alignTask").innerHTML = taskBox("align", "音频对齐任务");
+  try {
+    const audio = await upload($("alignAudio"), $("alignAudioInfo"));
+    const json = await upload($("alignJson"), $("alignJsonInfo"));
+    if (!audio || !json) throw new Error("请先选择完整录音和题库 JSON");
+    const cloud = $("alignAsr").value === "cloud";
+    startTask("align", {
+      audio,
+      json,
+      skipAsr: $("alignSkipAsr").checked,
+      asr: $("alignAsr").value,
+      apiKey: cloud ? ($("alignKey").value.trim() || undefined) : undefined,
+      baseUrl: cloud ? ($("alignBaseUrl").value.trim() || undefined) : undefined,
+      model: cloud ? ($("alignModel").value.trim() || undefined) : undefined,
+    }, $("alignGo"));
+  } catch (e) { toast("❌ " + e.message); $("alignGo").disabled = false; }
+});
+
+// ---- ② 剪裁 ----
+$("splitGo").addEventListener("click", async () => {
+  $("splitTask").innerHTML = taskBox("split", "自动剪裁任务");
+  try {
+    const aligned = await upload($("splitAligned"), $("splitAlignedInfo"));
+    if (!aligned) throw new Error("请先选择集成文件 aligned.json");
+    const audio = await upload($("splitAudio"), $("splitAudioInfo"));
+    const prefix = $("splitPrefix").value.trim() || undefined;
+    const padding = parseFloat($("splitPadding").value) || 0.5;
+    startTask("split", { aligned, audio: audio || undefined, prefix, padding }, $("splitGo"));
+  } catch (e) { toast("❌ " + e.message); $("splitGo").disabled = false; }
+});
+
+// ---- ③ 提取 ----
+$("exGo").addEventListener("click", async () => {
+  $("exTask").innerHTML = taskBox("extract", "AI 提取配对任务");
+  try {
+    const ocr = await upload($("exOcr"), $("exOcrInfo"));
+    if (!ocr) throw new Error("请先选择 OCR 题目文本");
+    const meta = await upload($("exMeta"), $("exMetaInfo"));
+    const aligned = await upload($("exAligned"), $("exAlignedInfo"));
+    startTask("extract", {
+      ocr,
+      meta: meta || undefined,
+      aligned: aligned || undefined,
+      provider: $("exProvider").value,
+      baseUrl: $("exBaseUrl").value.trim() || undefined,
+      apiKey: $("exApiKey").value.trim() || undefined,
+      model: $("exModel").value.trim() || undefined,
+    }, $("exGo"));
+  } catch (e) { toast("❌ " + e.message); $("exGo").disabled = false; }
+});
+
+// ---- 任务列表 ----
+async function refreshTasks() {
+  try {
+    const r = await fetch("/api/tools/tasks");
+    const d = await r.json();
+    const list = d.tasks || [];
+    $("tasklist").innerHTML = list.length
+      ? list.map((t) => `<div class="row"><span class="status ${t.status}">${t.status}</span> #${t.id} ${t.kind} — ${t.script} ${t.args}</div>`).join("")
+      : '<div class="empty">暂无任务（服务器重启后任务状态丢失，日志在 data/.tools-tasks/）</div>';
+  } catch (_) {}
+}
+refreshTasks();
+setInterval(refreshTasks, 8000);
+</script>
+</body>
+</html>

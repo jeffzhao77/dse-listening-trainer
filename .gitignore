@@ -1,0 +1,21 @@
+# 依赖与运行时
+node_modules/
+*.log
+.DS_Store
+
+# 数据库与本地配置（含密钥，勿提交）
+data/*.sqlite
+data/*.sqlite-*
+data/.oss-config.json
+data/.tools-upload/
+data/.tools-tasks/
+data/.audio-align-tmp/
+data/.auto-ts-tmp/
+
+# 音频与大型中间产物（GitHub 单文件限制 100MB；音频需手动放置，见 README）
+*.mp3
+*.wav
+2021HKDSE-新卷/source/
+
+# whisper 二进制（第三方，用户自行下载放置）
+scripts/whisper/

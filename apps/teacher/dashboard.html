@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教师端 · 成绩看板</title>
+<style>
+  :root{--bg:#f6f8f6;--card:#fff;--ink:#17211c;--mut:#66736c;--line:#dfe7e2;--brand:#16765f;--brand-d:#0f5e4c;--ok:#16765f;--okbg:#e9f7f1;--bad:#b94141;--badbg:#fff0ee;--warn:#a76415;--warnbg:#fff6df;--accent:#315f8b}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#edf6f1 0,#f6f8f6 300px);color:var(--ink);font-size:14px}
+  header{background:#123d33;padding:20px 24px 26px}
+  .header-inner{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  header h1{margin:0;color:#fff;font-size:20px}
+  header .sub{color:rgba(255,255,255,.75);font-size:12.5px;margin-top:4px}
+  .hright{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .wrap{max-width:1080px;margin:0 auto;padding:18px}
+  select,.btn{border-radius:9px;font-size:13px;padding:8px 13px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:600;cursor:pointer}
+  .btn{background:var(--brand);color:#fff;border:none}
+  .btn:hover{background:var(--brand-d)}
+  .btn.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+  .btn.out{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.25)}
+  .paperline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 0 14px}
+  .pill{font-size:11.5px;background:#eef4f1;color:var(--brand-d);border:1px solid #d5e6de;padding:3px 10px;border-radius:999px;font-weight:600}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 4px rgba(20,50,40,.05)}
+  .card .k{font-size:12px;color:var(--mut);margin-bottom:5px}
+  .card .v{font-size:22px;font-weight:800;color:var(--ink)}
+  .card .v small{font-size:12px;color:var(--mut);font-weight:600}
+  .card .v.ok{color:var(--ok)} .card .v.warn{color:var(--warn)}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:16px;box-shadow:0 1px 4px rgba(20,50,40,.04)}
+  .panel h2{margin:0 0 12px;font-size:15px;display:flex;align-items:center;gap:8px}
+  .panel h2 .hint{font-size:11.5px;color:var(--mut);font-weight:500}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{border-bottom:1px solid var(--line);padding:8px 9px;text-align:left;vertical-align:middle}
+  th{color:var(--mut);font-size:12px;background:#f3f7f5}
+  tr.clickable{cursor:pointer}
+  tr.clickable:hover td{background:#f0f7f3}
+  .qno{font-weight:700;color:#fff;background:var(--brand);font-size:11px;border-radius:6px;padding:2px 7px;display:inline-block}
+  .bar{background:#eef2ef;border-radius:999px;height:8px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar i{display:block;height:100%;border-radius:999px}
+  .bar.g i{background:var(--ok)} .bar.w i{background:var(--warn)} .bar.b i{background:var(--bad)}
+  .pct{font-weight:700;margin-left:8px}
+  .pct.ok{color:var(--ok)} .pct.warn{color:var(--warn)} .pct.bad{color:var(--bad)}
+  .res{display:inline-block;border-radius:7px;padding:1px 8px;font-size:11.5px;font-weight:700}
+  .res.ok{background:var(--okbg);color:var(--ok)} .res.bad{background:var(--badbg);color:var(--bad)}
+  .linkbtn{background:none;border:none;color:var(--brand);font-weight:700;cursor:pointer;font-size:12.5px;padding:4px 6px;border-radius:6px}
+  .linkbtn:hover{background:var(--okbg)}
+  .modal-mask{position:fixed;inset:0;background:rgba(15,40,30,.45);display:none;align-items:flex-start;justify-content:center;z-index:60;padding:30px 16px;overflow:auto}
+  .modal-mask.show{display:flex}
+  .modal{background:#fff;border-radius:16px;max-width:920px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+  .modal-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;border-radius:16px 16px 0 0;z-index:2}
+  .modal-head h3{margin:0;font-size:15px}
+  .modal-body{padding:14px 18px 20px;overflow:auto;max-height:70vh}
+  .x{background:none;border:none;font-size:20px;color:var(--mut);cursor:pointer;line-height:1;padding:4px}
+  .x:hover{color:var(--bad)}
+  .switch{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--mut)}
+  .switch select{font-size:12.5px;padding:5px 9px}
+  .sa{font-weight:600;max-width:220px;word-break:break-word}
+  .sa .empty{color:var(--mut);font-style:italic;font-weight:400}
+  .key{color:var(--ok);max-width:220px;word-break:break-word}
+  .meta{font-size:12px;color:var(--mut)}
+  .wr{display:flex;gap:8px;flex-wrap:wrap}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:10px 18px;border-radius:10px;font-size:13px;z-index:99;opacity:0;transition:.2s;pointer-events:none}
+  .toast.show{opacity:1}
+  .empty{color:var(--mut);text-align:center;padding:28px 0;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div>
+      <h1>教师端 · 成绩看板</h1>
+      <div class="sub" id="paperInfo">DSE Paper 3 Part A 听力训练 · 班级作答统计</div>
+    </div>
+    <div class="hright">
+      <select id="classSel" title="选择班级"></select>
+      <span style="color:rgba(255,255,255,.6);font-size:12px">导出</span>
+      <button class="btn ghost" id="expStudents">成绩单 CSV</button>
+      <button class="btn ghost" id="expAnswers">明细 CSV</button>
+      <button class="btn ghost" id="expJson">明细 JSON</button>
+      <button class="btn out" onclick="location.href='/tools'">试卷工具</button>
+      <button class="btn out" id="logout">退出</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="paperline" id="paperline"></div>
+  <div class="paperline" style="margin-top:6px">
+    <span class="muted" style="font-size:12.5px">查看试卷</span>
+    <select id="paperFilter" class="btn" style="background:#fff;color:var(--ink)">
+      <option value="">全部试卷</option>
+      <option value="mt56">MT56 模拟卷</option>
+      <option value="2021HKDSE">2021 DSE Part A</option>
+    </select>
+  </div>
+  <div style="background:var(--warnbg);border:1px solid #ecd9b0;color:var(--warn);border-radius:10px;padding:8px 14px;font-size:12.5px;margin-bottom:14px">⚠️ 当前展示的学生成绩为 <b>seed-demo 注入的模拟数据</b>（demo01-08 随机生成），仅用于演示教师端功能；真实成绩来自学生在线作答。</div>
+  <div class="cards" id="cards"></div>
+
+  <div class="panel">
+    <h2>逐题正确率 <span class="hint">按每人最近一次作答统计 · 点击某题查看错题本</span></h2>
+    <div id="qtable"><div class="empty">加载中…</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>学生成绩 <span class="hint">点击「明细」查看逐题 diff</span></h2>
+    <div id="stable"><div class="empty">加载中…</div></div>
+  </div>
+</div>
+
+<!-- 作答明细弹窗 -->
+<div class="modal-mask" id="detailMask">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="detailTitle">作答明细</h3>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="switch" id="attemptSwitch"></span>
+        <button class="x" data-close="detailMask">✕</button>
+      </div>
+    </div>
+    <div class="modal-body" id="detailBody"></div>
+  </div>
+</div>
+
+<!-- 错题本弹窗 -->
+<div class="modal-mask" id="wrongMask">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="wrongTitle">错题本</h3>
+      <button class="x" data-close="wrongMask">✕</button>
+    </div>
+    <div class="modal-body" id="wrongBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let currentClassId = null;
+let currentStudents = [];
+
+function esc(s) {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+function fmtSec(s) {
+  if (s == null) return "—";
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  return m ? `${m}分${sec}秒` : `${sec}秒`;
+}
+function fmtDur(s) {
+  return s == null ? "—" : `${Math.round(s / 60)} 分钟`;
+}
+function barHtml(pct) {
+  const cls = pct >= 70 ? "g" : pct >= 50 ? "w" : "b";
+  const pcls = pct >= 70 ? "ok" : pct >= 50 ? "warn" : "bad";
+  return `<span class="bar ${cls}"><i style="width:${pct}%"></i></span><span class="pct ${pcls}">${pct}%</span>`;
+}
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 1800);
+}
+function fmtAnswer(v, kind) {
+  if (v == null || v === "") return '<span class="empty">(未作答)</span>';
+  if (Array.isArray(v)) return esc(v.join(", "));
+  return esc(String(v));
+}
+
+// ---- 初始化 ----
+async function init() {
+  document.querySelectorAll("[data-close]").forEach((b) =>
+    b.addEventListener("click", () => $(b.dataset.close).classList.remove("show"))
+  );
+  document.querySelectorAll(".modal-mask").forEach((m) =>
+    m.addEventListener("click", (e) => { if (e.target === m) m.classList.remove("show"); })
+  );
+  $("classSel").addEventListener("change", (e) => { currentClassId = Number(e.target.value); loadReport(); });
+  const pf = $("paperFilter");
+  if (pf) pf.addEventListener("change", (e) => { localStorage.setItem("teacherPaper", e.target.value); loadReport(); });
+  $("expStudents").onclick = () => { if (currentClassId) location.href = "/api/export/students.csv?classId=" + currentClassId; };
+  $("expAnswers").onclick = () => { if (currentClassId) location.href = "/api/export/answers.csv?classId=" + currentClassId; };
+  $("expJson").onclick = () => { if (currentClassId) location.href = "/api/export/answers.json?classId=" + currentClassId; };
+  $("logout").onclick = async () => { await fetch("/api/auth/logout", { method: "POST" }); location.href = "/"; };
+
+  const r = await fetch("/api/classes");
+  const d = await r.json();
+  if (!d.ok) { toast("加载班级失败"); return; }
+  const sel = $("classSel");
+  sel.innerHTML = d.classes.map((c) => `<option value="${c.id}">${esc(c.name)}（${c.student_count} 人 · ${c.attempt_count} 次作答）</option>`).join("");
+  if (d.classes.length) {
+    currentClassId = d.classes[0].id;
+    const pf = $("paperFilter");
+    if (pf) pf.value = localStorage.getItem("teacherPaper") || "";
+    loadReport();
+  } else {
+    $("cards").innerHTML = '<div class="empty">暂无班级</div>';
+  }
+}
+
+// ---- 看板 ----
+async function loadReport() {
+  const pf = $("paperFilter");
+  const q = pf && pf.value ? `?paperCode=${encodeURIComponent(pf.value)}` : "";
+  const d = await (await fetch(`/api/reports/class/${currentClassId}${q}`)).json();
+  if (!d.ok) { toast(d.error || "加载看板失败"); return; }
+  currentStudents = d.students;
+  const p = d.paper;
+  $("paperInfo").textContent = "DSE Paper 3 Part A 听力训练 · " + (d.class.name || "");
+  $("paperline").innerHTML = p
+    ? `<span class="pill">${esc(p.code)}</span><span class="pill">${esc(p.title)}</span><span class="pill">共 ${p.total_marks} 题</span>`
+    : '<span class="pill">暂无作答</span>';
+
+  const s = d.summary;
+  $("cards").innerHTML = s ? `
+    <div class="card"><div class="k">学生数</div><div class="v">${s.students}<small> 人</small></div></div>
+    <div class="card"><div class="k">提交次数</div><div class="v">${s.attempts}<small> 次</small></div></div>
+    <div class="card"><div class="k">平均分（最新一次）</div><div class="v">${s.avg_score}<small> / ${p?.total_marks ?? "—"}</small></div></div>
+    <div class="card"><div class="k">平均正确率</div><div class="v ok">${s.avg_pct}%</div></div>
+    <div class="card"><div class="k">平均耗时</div><div class="v warn">${fmtDur(s.avg_duration_sec)}</div></div>
+    <div class="card"><div class="k">最高 / 最低分</div><div class="v">${s.max_score}<small> / ${s.min_score}</small></div></div>`
+    : '<div class="empty">该班级暂无作答数据</div>';
+
+  if (d.questions.length) {
+    $("qtable").innerHTML = `<table>
+      <tr><th>题号</th><th>题目</th><th>正确率</th><th>对 / 总</th></tr>
+      ${d.questions.map((q) => `<tr class="clickable" onclick="openWrong(${q.no})">
+        <td><span class="qno">#${q.no}</span></td>
+        <td>${esc(q.label)} <span class="meta">(${esc(q.kind)})</span></td>
+        <td>${barHtml(q.pct)}</td><td>${q.correct} / ${q.total}</td>
+      </tr>`).join("")}
+    </table>`;
+  } else {
+    $("qtable").innerHTML = '<div class="empty">暂无逐题数据</div>';
+  }
+
+  $("stable").innerHTML = `<table>
+    <tr><th>学生</th><th>作答次数</th><th>平均正确率</th><th>最近一次</th><th>耗时</th><th>操作</th></tr>
+    ${d.students.map((st) => `
+      <tr>
+        <td><b>${esc(st.display_name)}</b> <span class="meta">${esc(st.username)}</span></td>
+        <td>${st.attempts_count}</td>
+        <td>${st.avg_pct == null ? '<span class="meta">—</span>' : barHtml(st.avg_pct)}</td>
+        <td>${st.latest ? `${st.latest.score} / ${st.latest.question_count} <span class="meta">(${st.latest.pct}%)</span>` : '<span class="meta">未作答</span>'}</td>
+        <td>${st.latest ? fmtDur(st.latest.duration_sec) : "—"}</td>
+        <td>${st.attempts_count ? `<button class="linkbtn" onclick="openDetail(${st.id})">明细</button>` : ""}</td>
+      </tr>`).join("")}
+  </table>`;
+}
+
+// ---- 明细弹窗 ----
+async function openDetail(studentId) {
+  const st = currentStudents.find((x) => x.id === studentId);
+  if (!st) return;
+  $("detailTitle").textContent = `${st.display_name} · 作答明细`;
+  const sw = $("attemptSwitch");
+  sw.innerHTML = `选择作答：<select id="attemptPick">${st.attempts.map((a, i) =>
+    `<option value="${a.attempt_id}">第 ${st.attempts.length - i} 次（${a.score}/${a.question_count} · ${esc(a.submitted_at || "")}）</option>`).join("")}</select>`;
+  const pick = $("attemptPick");
+  pick.onchange = () => renderDetail(Number(pick.value));
+  $("detailMask").classList.add("show");
+  renderDetail(st.latest ? st.latest.attempt_id : st.attempts[0].attempt_id);
+}
+
+async function renderDetail(attemptId) {
+  $("detailBody").innerHTML = '<div class="empty">加载中…</div>';
+  const d = await (await fetch(`/api/reports/attempt/${attemptId}`)).json();
+  if (!d.ok) { $("detailBody").innerHTML = '<div class="empty">加载失败</div>'; return; }
+  const a = d.attempt;
+  $("detailBody").innerHTML = `
+    <div class="paperline">
+      <span class="pill">${esc(d.paper.code)}</span>
+      <span class="pill">得分 ${a.score} / ${a.question_count}</span>
+      <span class="pill">正确 ${a.correct_count} 题</span>
+      <span class="pill">整卷耗时 ${fmtSec(a.duration_sec)}</span>
+      <span class="pill">提交于 ${esc(a.submitted_at)}</span>
+    </div>
+    <table>
+      <tr><th>题号</th><th>题目</th><th>学生答案</th><th>标准答案</th><th>结果</th><th>耗时</th><th>整段播放</th><th>信号句</th><th>精听尝试</th></tr>
+      ${d.answers.map((q) => `<tr>
+        <td><span class="qno">#${q.question_no}</span></td>
+        <td>${esc(q.label)} <span class="meta">(${esc(q.question_type)})</span></td>
+        <td class="sa">${fmtAnswer(q.student_answer, q.question_type)}</td>
+        <td class="key">${esc(q.reference_answer || "") || "—"}</td>
+        <td>${q.is_correct === 1 ? '<span class="res ok">对</span>' : '<span class="res bad">错</span>'}</td>
+        <td>${q.duration_sec != null ? q.duration_sec + "s" : "—"}</td>
+        <td>${q.audio_plays || 0}</td>
+        <td>${q.signal_plays || 0}</td>
+        <td>${q.cloze_attempts || 0}</td>
+      </tr>`).join("")}
+    </table>`;
+}
+
+// ---- 错题本弹窗 ----
+async function openWrong(qno) {
+  $("wrongMask").classList.add("show");
+  $("wrongBody").innerHTML = '<div class="empty">加载中…</div>';
+  const d = await (await fetch(`/api/reports/question/${qno}?classId=${currentClassId}`)).json();
+  if (!d.ok) { $("wrongBody").innerHTML = '<div class="empty">加载失败</div>'; return; }
+  $("wrongTitle").textContent = `错题本 · 第 ${qno} 题`;
+  $("wrongBody").innerHTML = `
+    <div class="paperline">
+      <span class="pill">${esc(d.question.label || "题目")}（${esc(d.question.kind || "?")}）</span>
+      <span class="pill">正确率 ${d.stats.pct}%</span>
+      <span class="pill">${d.stats.correct} 对 / ${d.stats.total} 总</span>
+    </div>
+    <div class="key" style="margin-bottom:10px">标准答案：${esc(Array.isArray(d.question.reference_answer) ? d.question.reference_answer.join("  /  ") : d.question.reference_answer) || "—"}</div>
+    ${d.wrong.length ? `<table>
+      <tr><th>学生</th><th>错误答案</th><th>该题耗时</th><th>精听尝试</th><th>操作</th></tr>
+      ${d.wrong.map((w) => `<tr>
+        <td><b>${esc(w.student_name)}</b></td>
+        <td class="sa">${fmtAnswer(w.student_answer)}</td>
+        <td>${w.duration_sec != null ? w.duration_sec + "s" : "—"}</td>
+        <td>${w.cloze_attempts || 0}</td>
+        <td><button class="linkbtn" onclick="openDetailFromWrong(${w.attempt_id})">查看该次作答</button></td>
+      </tr>`).join("")}
+    </table>` : '<div class="empty">全班此题无人做错 🎉</div>'}`;
+}
+
+async function openDetailFromWrong(attemptId) {
+  $("wrongMask").classList.remove("show");
+  const st = currentStudents.find((s) => s.attempts.some((x) => x.attempt_id === attemptId));
+  if (!st) return;
+  $("detailTitle").textContent = `${st.display_name} · 作答明细`;
+  const sw = $("attemptSwitch");
+  sw.innerHTML = `选择作答：<select id="attemptPick">${st.attempts.map((a, i) =>
+    `<option value="${a.attempt_id}" ${a.attempt_id === attemptId ? "selected" : ""}>第 ${st.attempts.length - i} 次（${a.score}/${a.question_count} · ${esc(a.submitted_at || "")}）</option>`).join("")}</select>`;
+  const pick = $("attemptPick");
+  pick.onchange = () => renderDetail(Number(pick.value));
+  $("detailMask").classList.add("show");
+  renderDetail(attemptId);
+}
+
+init();
+</script>
+</body>
+</html>

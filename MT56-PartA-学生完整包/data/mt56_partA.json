@@ -1,0 +1,1603 @@
+{
+  "id": "mt56",
+  "paper": "Paper 3 (Listening & Integrated Skills) — Part A",
+  "title": "Pineapple Buns (Mock MT56)",
+  "perTaskAudio": true,
+  "totalMarks": 42,
+  "situation": "Charlotte, Mindy and John are interns at a book publisher, which is producing a book on famous Hong Kong foods. Their boss Luke has asked them to research pineapple buns.",
+  "speakers": {
+    "Ch": "Charlotte",
+    "Mi": "Mindy",
+    "Jo": "John",
+    "Ml": "Mila",
+    "Pa": "Pauline",
+    "Le": "Leo",
+    "Ol": "Olivia",
+    "He": "Helen",
+    "Dr": "Dr Li",
+    "A": "Announcer"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Researching pineapple buns online",
+      "marks": 11,
+      "audio": "audio/mt56_task1.mp3",
+      "instructions": "Charlotte, Mindy and John are researching pineapple buns online. Listen to their conversation and complete the note sheet below. The first one has been provided as an example.",
+      "tapescript": [
+        {
+          "sp": "Ch",
+          "t": "All right, Mindy, John. We'd better start our research on the pineapple bun. I've been eating them for my whole life, but actually, I don't know that much about them!"
+        },
+        {
+          "sp": "Mi",
+          "t": "I never really thought to research them, to be honest."
+        },
+        {
+          "sp": "Jo",
+          "t": "Well, let's get started. Here … I pulled up a Wiki. So, obviously we all know that a pineapple bun is a sweet bun …"
+        },
+        {
+          "sp": "Ch",
+          "t": "… with that delicious crunchy top."
+        },
+        {
+          "sp": "Jo",
+          "t": "Right. And it's mostly popular in Hong Kong. Oh, but look, it's popular in some other places, too. Especially ones where a lot of Hongkongers have moved to."
+        },
+        {
+          "sp": "Ch",
+          "t": "Such as?"
+        },
+        {
+          "sp": "Mi",
+          "t": "Vancouver is on that list. When I last visited Vancouver, there were quite a few cafes selling pineapple buns."
+        },
+        {
+          "sp": "Jo",
+          "t": "London is another. The article says that there are a number of London cafes selling our beloved Hong Kong treat."
+        },
+        {
+          "sp": "Ch",
+          "t": "That's great! Now I want to visit London even more."
+        },
+        {
+          "sp": "Jo",
+          "t": "So, according to this Wiki, a lot of people mistakenly think that pineapple buns have pineapple in them …"
+        },
+        {
+          "sp": "Ch",
+          "t": "My cousin from the United States thought that, actually. But, why are they called that, anyway?"
+        },
+        {
+          "sp": "Mi",
+          "t": "It's because of the pattern on top. The pattern looks like the outside of a pineapple, so that's where the bun gets its name."
+        },
+        {
+          "sp": "Ch",
+          "t": "I should have guessed that."
+        },
+        {
+          "sp": "Mi",
+          "t": "Let's look at a recipe for pineapple buns now. We should know the steps to make them."
+        },
+        {
+          "sp": "Jo",
+          "t": "Agreed. Ah, here's one. So, according to this, the first step is to mix the dough for the bottom of the bun."
+        },
+        {
+          "sp": "Ch",
+          "t": "And after that?"
+        },
+        {
+          "sp": "Jo",
+          "t": "After that, you need to get the tops ready. So, you mix those ingredients and then flatten it with a rolling pin. Next, you place the top on the bun and score it with a knife. Basically, you're using the knife to help create the pattern. You don't have to do that, but it helps make it clearer."
+        },
+        {
+          "sp": "Mi",
+          "t": "Don't you brush on an egg mixture at some point?"
+        },
+        {
+          "sp": "Jo",
+          "t": "Yes. That's next, actually. After using the knife to score the top, you brush on some egg. The last step is to put them in the oven."
+        },
+        {
+          "sp": "Ch",
+          "t": "Well, the last, last step is to eat them."
+        },
+        {
+          "sp": "Mi",
+          "t": "(laughs) No one is going to forget to eat them! So, how do all of you like to eat pineapple buns? Charlotte?"
+        },
+        {
+          "sp": "Ch",
+          "t": "Oh, I love to have them with milk tea."
+        },
+        {
+          "sp": "Mi",
+          "t": "Mmm. Yum. How about you, Mindy?"
+        },
+        {
+          "sp": "Mi",
+          "t": "I know most people like them in the morning, but I prefer them as an afternoon snack. I get really hungry in the afternoons, and having a filling snack like that is great. You, John?"
+        },
+        {
+          "sp": "Jo",
+          "t": "Oh, I'm pretty traditional. I just like them with a slice of butter in the middle."
+        },
+        {
+          "sp": "Ch",
+          "t": "Right! You have to have it with a slice of butter! Erm, as a part of our research, do you think we should go get some pineapple buns right now?"
+        },
+        {
+          "sp": "Mi",
+          "t": "Definitely!"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Pineapple bun research — Description"
+        },
+        {
+          "type": "text",
+          "html": "The pineapple bun is a sweet pastry with a <b>crunchy top</b> (example)."
+        },
+        {
+          "type": "text",
+          "html": "It's most popular in Hong Kong, but you can also find it in other cities, such as (1) ___ and (2) ___."
+        },
+        {
+          "type": "fill",
+          "no": 1,
+          "label": "(1) other city",
+          "answer": [
+            "Vancouver"
+          ],
+          "signal": "Especially ones where a lot of Hongkongers have moved to.",
+          "cloze": "Vancouver is on that list.",
+          "ts": {
+            "signal": [
+              102.56,
+              105.88
+            ],
+            "answer": [
+              107.76,
+              109.88
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 2,
+          "label": "(2) other city",
+          "answer": [
+            "London"
+          ],
+          "signal": "Now I want to visit London even more.",
+          "cloze": "London is another.",
+          "ts": {
+            "signal": [
+              128.08,
+              131.1
+            ],
+            "answer": [
+              116.98,
+              118.06
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 3,
+          "label": "Some people believe pineapple buns contain pineapple, but it gets its name from (3)",
+          "answer": [
+            "the pattern on top",
+            "the pattern (looks like a pineapple)"
+          ],
+          "signal": "why are they called that, anyway?",
+          "cloze": "It's because of the pattern on top.",
+          "ts": {
+            "signal": [
+              145.44,
+              147.68
+            ],
+            "answer": [
+              148.98,
+              150.9
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "How to make pineapple buns (Order the steps 1–5)"
+        },
+        {
+          "type": "steporder",
+          "label": "在每张图下方填写正确的步骤顺序（1–5）",
+          "items": [
+            {
+              "no": 4,
+              "img": "assets/mt56/step_flatten.png",
+              "answer": "2",
+              "signal": "you need to get the tops ready",
+              "cloze": "you mix those ingredients and then flatten it with a rolling pin.",
+              "ts": {
+                "signal": [
+                  180.52,
+                  182.08
+                ],
+                "answer": [
+                  183.64,
+                  188.04
+                ]
+              }
+            },
+            {
+              "no": 5,
+              "img": "assets/mt56/step_mix.png",
+              "answer": "1",
+              "signal": "We should know the steps to make them.",
+              "cloze": "the first step is to mix the dough for the bottom of the bun.",
+              "ts": {
+                "signal": [
+                  164.18,
+                  166.28
+                ],
+                "answer": [
+                  172.5,
+                  176.72
+                ]
+              }
+            },
+            {
+              "no": 6,
+              "img": "assets/mt56/step_score.png",
+              "answer": "3",
+              "signal": "Next, you place the top on the bun",
+              "cloze": "you place the top on the bun and score it with a knife.",
+              "ts": {
+                "signal": [
+                  189.14,
+                  192.38
+                ],
+                "answer": [
+                  190.26,
+                  194.22
+                ]
+              }
+            },
+            {
+              "no": 7,
+              "img": "assets/mt56/step_egg.png",
+              "answer": "4",
+              "signal": "Don't you brush on an egg mixture at some point?",
+              "cloze": "After using the knife to score the top, you brush on some egg.",
+              "ts": {
+                "signal": [
+                  205.02,
+                  208.08
+                ],
+                "answer": [
+                  211.96,
+                  216.64
+                ]
+              }
+            },
+            {
+              "no": 8,
+              "img": "assets/mt56/step_oven.png",
+              "answer": "5",
+              "signal": "you brush on some egg.",
+              "cloze": "The last step is to put them in the oven.",
+              "ts": {
+                "signal": [
+                  215.46,
+                  216.64
+                ],
+                "answer": [
+                  217.34,
+                  220.68
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Group opinions about pineapple buns"
+        },
+        {
+          "type": "fill",
+          "no": 9,
+          "label": "Charlotte likes them (9)",
+          "answer": [
+            "with milk tea"
+          ],
+          "signal": "how do all of you like to eat pineapple buns? Charlotte?",
+          "cloze": "Oh, I love to have them with milk tea.",
+          "ts": {
+            "signal": [
+              231.5,
+              235.54
+            ],
+            "answer": [
+              236.3,
+              238.98
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 10,
+          "label": "Mindy likes them (10)",
+          "answer": [
+            "as an afternoon snack"
+          ],
+          "signal": "I know most people like them in the morning, but I prefer them",
+          "cloze": "but I prefer them as an afternoon snack.",
+          "ts": {
+            "signal": [
+              244.18,
+              248.94
+            ],
+            "answer": [
+              247.54,
+              250.32
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 11,
+          "label": "John likes them (11)",
+          "answer": [
+            "with a slice of butter (in the middle)"
+          ],
+          "signal": "Oh, I'm pretty traditional.",
+          "cloze": "I just like them with a slice of butter in the middle.",
+          "ts": {
+            "signal": [
+              259.68,
+              262.84
+            ],
+            "answer": [
+              262.5,
+              265.44
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Phone interview with food blogger Mila",
+      "marks": 10,
+      "audio": "audio/mt56_task2.mp3",
+      "instructions": "John is interviewing a food blogger, Mila, over the phone to learn more about pineapple buns. Listen and fill in the missing information in the spaces below. One has been provided as an example.",
+      "tapescript": [
+        {
+          "sp": "Ml",
+          "t": "Hello?"
+        },
+        {
+          "sp": "Jo",
+          "t": "Hi, is that Mila?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Yes, speaking."
+        },
+        {
+          "sp": "Jo",
+          "t": "This is John. I emailed you about an interview on pineapple buns."
+        },
+        {
+          "sp": "Ml",
+          "t": "Ah, yes! I do love talking about my favourite Hong Kong pastry. So, go ahead. What questions do you have for me?"
+        },
+        {
+          "sp": "Jo",
+          "t": "I'd like to know, in your opinion, what are the signs of a perfect pineapple bun."
+        },
+        {
+          "sp": "Ml",
+          "t": "I wrote a blog post about exactly this! There are a few things that you need to look for. The first one, of course, is that the top has a golden colour. If it doesn't, the baker has done something wrong. It's so disappointing to get one like that."
+        },
+        {
+          "sp": "Jo",
+          "t": "Yes, it is!"
+        },
+        {
+          "sp": "Ml",
+          "t": "Secondly, the flavour is important. Is it buttery? Is it sweet?"
+        },
+        {
+          "sp": "Jo",
+          "t": "Right. Those are certainly important qualities."
+        },
+        {
+          "sp": "Ml",
+          "t": "But they're not the only ones. In my opinion, the texture is just as important."
+        },
+        {
+          "sp": "Jo",
+          "t": "Could you explain what you mean by that?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Well, the texture is how it feels in your mouth. Meat is meant to be chewy and juicy. Ice cream is meant to be creamy and cold. And pineapple buns ought to be light and fluffy."
+        },
+        {
+          "sp": "Jo",
+          "t": "If they're not light and fluffy, what's gone wrong, do you think?"
+        },
+        {
+          "sp": "Ml",
+          "t": "It could be a number of things, but adding too much flour or not letting it sit for long enough can cause that issue."
+        },
+        {
+          "sp": "Jo",
+          "t": "Are there any other signs to look out for?"
+        },
+        {
+          "sp": "Ml",
+          "t": "There's one way to tell without even eating it. Give it a poke."
+        },
+        {
+          "sp": "Jo",
+          "t": "A poke?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Yes. Poke it with your finger and see if it bounces back. If it bounces back, it's probably a good pineapple bun."
+        },
+        {
+          "sp": "Jo",
+          "t": "Interesting. I'm guessing bakers don't let you poke all the buns!"
+        },
+        {
+          "sp": "Ml",
+          "t": "(laughs) No, they wouldn't like that. You'll have to buy it first."
+        },
+        {
+          "sp": "Jo",
+          "t": "So, what are your favourite places to get pineapple buns?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Tai Tung Bakery is a classic. Did you know that it's been there for almost eighty years?"
+        },
+        {
+          "sp": "Jo",
+          "t": "Wow! That's a long time. I'd love to check it out. Where's it located?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Here … I have a list of bakery and cafe addresses. It's at … 57 Fau Tsoi Street. That's F-A-U T-S-O-I Street."
+        },
+        {
+          "sp": "Jo",
+          "t": "(slowly) 57 Fau Tsoi Street."
+        },
+        {
+          "sp": "Ml",
+          "t": "They've been making pineapple buns for longer than almost anyone. Another place I love is Cheung Hing Coffee Shop. It's been there for ages, too … more than seventy years, in fact."
+        },
+        {
+          "sp": "Jo",
+          "t": "I didn't know so many places had been making pineapple buns for that long."
+        },
+        {
+          "sp": "Ml",
+          "t": "It's amazing, isn't it? These skills are passed down over generations."
+        },
+        {
+          "sp": "Jo",
+          "t": "Where's Cheung Hing Coffee Shop?"
+        },
+        {
+          "sp": "Ml",
+          "t": "It's at … 90 Yik Yam Street."
+        },
+        {
+          "sp": "Jo",
+          "t": "Ninety …"
+        },
+        {
+          "sp": "Ml",
+          "t": "Oh. Sorry. There was a smudge on my paper. It's just 9 Yik Yam Street."
+        },
+        {
+          "sp": "Jo",
+          "t": "How do you spell that?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Y-I-K Yik, and Y-A-M Yam."
+        },
+        {
+          "sp": "Jo",
+          "t": "Got it."
+        },
+        {
+          "sp": "Ml",
+          "t": "Another place I love, unfortunately, isn't in Hong Kong."
+        },
+        {
+          "sp": "Jo",
+          "t": "Oh, really?"
+        },
+        {
+          "sp": "Ml",
+          "t": "It's a great spot, though. It's called Champion Bolo Bun. They only make pineapple buns! They do them in all sorts of ways. It's newer. It's been there less than five years."
+        },
+        {
+          "sp": "Jo",
+          "t": "Where do I need to go?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Well, if you're ever in Singapore, it's at (slowly) 92 Tanjong Pagar Road."
+        },
+        {
+          "sp": "Jo",
+          "t": "So, that's 92 Tanjong Pagar Road in Singapore. I can search online for the spelling later."
+        },
+        {
+          "sp": "Ml",
+          "t": "Any other questions for me?"
+        },
+        {
+          "sp": "Jo",
+          "t": "Just one more. You clearly have strong feelings about pineapple buns. Why do you think the pineapple bun is such an important dish?"
+        },
+        {
+          "sp": "Ml",
+          "t": "Ah. Good question. I think it's because it's something that everyone in our city knows about and has tasted. It brings us together in that way, since we've all experienced it. It's a part of our culture."
+        },
+        {
+          "sp": "Jo",
+          "t": "Thank you so much, Mila!"
+        },
+        {
+          "sp": "Ml",
+          "t": "My pleasure."
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Signs of a perfect pineapple bun"
+        },
+        {
+          "type": "fill",
+          "no": 12,
+          "label": "the top (12)",
+          "answer": [
+            "has a golden colour",
+            "golden colour",
+            "is golden"
+          ],
+          "signal": "There are a few things that you need to look for.",
+          "cloze": "the top has a golden colour.",
+          "ts": {
+            "signal": [
+              96.81,
+              100.11
+            ],
+            "answer": [
+              103.25,
+              105.29
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 13,
+          "label": "the flavour (13)",
+          "answer": [
+            "is buttery and sweet",
+            "buttery and sweet"
+          ],
+          "signal": "Secondly, the flavour is important.",
+          "cloze": "Is it buttery? Is it sweet?",
+          "ts": {
+            "signal": [
+              115.05,
+              117.69
+            ],
+            "answer": [
+              118.67,
+              120.99
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 14,
+          "label": "the texture (14)",
+          "answer": [
+            "is light and fluffy",
+            "light and fluffy"
+          ],
+          "signal": "the texture is just as important.",
+          "cloze": "And pineapple buns ought to be light and fluffy.",
+          "ts": {
+            "signal": [
+              130.91,
+              132.93
+            ],
+            "answer": [
+              148.89,
+              152.53
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 15,
+          "label": "the bun (15)",
+          "answer": [
+            "bounces back (when you press / poke it)",
+            "bounces back"
+          ],
+          "signal": "Give it a poke.",
+          "cloze": "Poke it with your finger and see if it bounces back.",
+          "ts": {
+            "signal": [
+              175.41,
+              176.33
+            ],
+            "answer": [
+              179.33,
+              182.89
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Mila's favourite places to get pineapple buns"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Name of bakery/cafe",
+            "Years in operation",
+            "Address"
+          ],
+          "rows": [
+            [
+              {
+                "static": "Tai Tung Bakery"
+              },
+              {
+                "fill": {
+                  "no": 16,
+                  "answer": [
+                    "almost 80 years",
+                    "(almost) eighty years",
+                    "80 years"
+                  ],
+                  "signal": "Tai Tung Bakery is a classic.",
+                  "cloze": "Did you know that it's been there for almost eighty years?",
+                  "ts": {
+                    "signal": [
+                      205.65,
+                      207.01
+                    ],
+                    "answer": [
+                      207.93,
+                      211.63
+                    ]
+                  }
+                }
+              },
+              {
+                "fill": {
+                  "no": 17,
+                  "answer": [
+                    "57 Fau Tsoi Street"
+                  ],
+                  "signal": "Where's it located?",
+                  "cloze": "It's at … 57 Fau Tsoi Street.",
+                  "ts": {
+                    "signal": [
+                      217.41,
+                      217.93
+                    ],
+                    "answer": [
+                      223.63,
+                      227.09
+                    ]
+                  }
+                }
+              }
+            ],
+            [
+              {
+                "static": "Cheung Hing Coffee Shop"
+              },
+              {
+                "fill": {
+                  "no": 18,
+                  "answer": [
+                    "more than 70 years",
+                    "(more than) seventy years",
+                    "70 years"
+                  ],
+                  "signal": "Another place I love is Cheung Hing Coffee Shop.",
+                  "cloze": "more than seventy years, in fact.",
+                  "ts": {
+                    "signal": [
+                      244.53,
+                      248.49
+                    ],
+                    "answer": [
+                      251.89,
+                      254.05
+                    ]
+                  }
+                }
+              },
+              {
+                "fill": {
+                  "no": 19,
+                  "answer": [
+                    "9 Yik Yam Street"
+                  ],
+                  "signal": "Where's Cheung Hing Coffee Shop?",
+                  "cloze": "It's just 9 Yik Yam Street.",
+                  "ts": {
+                    "signal": [
+                      247.39,
+                      248.49
+                    ],
+                    "answer": [
+                      279.07,
+                      281.41
+                    ]
+                  }
+                }
+              }
+            ],
+            [
+              {
+                "static": "Champion Bolo Bun"
+              },
+              {
+                "fill": {
+                  "no": 20,
+                  "answer": [
+                    "less than 5 years",
+                    "less than five years"
+                  ],
+                  "signal": "It's called Champion Bolo Bun.",
+                  "cloze": "It's been there less than five years.",
+                  "ts": {
+                    "signal": [
+                      300.47,
+                      302.59
+                    ],
+                    "answer": [
+                      310.69,
+                      312.63
+                    ]
+                  }
+                }
+              },
+              {
+                "static": "92 Tanjong Pagar Road (example)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "mc",
+          "no": 21,
+          "label": "(21) Why does Mila think the pineapple bun is an important dish?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It's a shared experience between Hongkongers."
+            },
+            {
+              "id": "B",
+              "text": "It has a long and fascinating history."
+            },
+            {
+              "id": "C",
+              "text": "It brings families and friends together."
+            },
+            {
+              "id": "D",
+              "text": "People everywhere recognize it as a Hong Kong dish."
+            }
+          ],
+          "answer": "A",
+          "signal": "Why do you think the pineapple bun is such an important dish?",
+          "cloze": "it's something that everyone in our city knows about and has tasted. It brings us together in that way, since we've all experienced it.",
+          "ts": {
+            "signal": [
+              338.47,
+              342.91
+            ],
+            "answer": [
+              347.33,
+              357.61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Where did the pineapple bun come from?",
+      "marks": 11,
+      "audio": "audio/mt56_task3.mp3",
+      "instructions": "Mindy is interviewing three people about where they think the pineapple bun came from. Listen to the discussion and make notes in the note sheet below. One has been provided as an example.",
+      "tapescript": [
+        {
+          "sp": "Mi",
+          "t": "I'd like to thank you three for contacting me, and for agreeing to do this interview. According to my research, it's a bit of a mystery where the pineapple bun came from, but the three of you let me know that you have theories about where it originated."
+        },
+        {
+          "sp": "Pa",
+          "t": "Mine is more than a theory. I'm quite certain."
+        },
+        {
+          "sp": "Mi",
+          "t": "Oh? It's Pauline, Pauline Chan, right?"
+        },
+        {
+          "sp": "Pa",
+          "t": "Yes, that's me. So, I just know that the pineapple bun came originally from Shanghai."
+        },
+        {
+          "sp": "Mi",
+          "t": "What makes you say that?"
+        },
+        {
+          "sp": "Pa",
+          "t": "Well, I'm from there, myself. And, I've heard it from many others in Hong Kong, that the pineapple bun probably started there. You see, Shanghai used to be a major trading port. As such, its cuisine has international influences. These international influences explain the ingredients and cooking methods for the pineapple bun."
+        },
+        {
+          "sp": "Mi",
+          "t": "I see. And how did it get to Hong Kong, do you suppose?"
+        },
+        {
+          "sp": "Pa",
+          "t": "Well, many many people from Shanghai moved to Hong Kong during the Sino-Japanese War. The Sino-Japanese War took place in 1937, you know."
+        },
+        {
+          "sp": "Mi",
+          "t": "Right. So, you think that people from Shanghai brought the pineapple bun to Hong Kong then?"
+        },
+        {
+          "sp": "Pa",
+          "t": "Yes, I do. It's no coincidence that pineapple buns became popular in Hong Kong soon afterwards, in the 1940s."
+        },
+        {
+          "sp": "Mi",
+          "t": "Ah, that is true. But still … it could be a coincidence. Do you have any proof for your theory?"
+        },
+        {
+          "sp": "Pa",
+          "t": "Well, erm, no, not exactly."
+        },
+        {
+          "sp": "Mi",
+          "t": "It's very interesting, anyway! So, Leo Wong …"
+        },
+        {
+          "sp": "Le",
+          "t": "That's me!"
+        },
+        {
+          "sp": "Mi",
+          "t": "You think the pineapple bun is from here in Hong Kong, don't you?"
+        },
+        {
+          "sp": "Le",
+          "t": "Yes, I really believe that. It's such an iconic Hong Kong dish. How could it be from anywhere else? I believe it started here and then moved to other places. Bakeries in Hong Kong have been making pineapple buns for at least eighty years, and perhaps longer. You see, bakeries here started specializing in pineapple buns as they're challenging to make at home."
+        },
+        {
+          "sp": "Mi",
+          "t": "Yes, they certainly are!"
+        },
+        {
+          "sp": "Le",
+          "t": "Now we see that pineapple buns are in other places, but they came from here! As people from Hong Kong moved to other countries, pineapple buns spread across the world. That's why you find them in Tokyo, San Francisco, and so on."
+        },
+        {
+          "sp": "Mi",
+          "t": "Interesting. Now, Olivia Thompson, where do you think they came from?"
+        },
+        {
+          "sp": "Ol",
+          "t": "This might be controversial, but I think they might be from the Netherlands."
+        },
+        {
+          "sp": "Mi",
+          "t": "The Netherlands—really?"
+        },
+        {
+          "sp": "Ol",
+          "t": "Yes. I lived there for a little while, and there's a sweet bread called tiger bread, or Dutch tiger bread. Tiger bread and pineapple buns are very similar."
+        },
+        {
+          "sp": "Mi",
+          "t": "Really?"
+        },
+        {
+          "sp": "Ol",
+          "t": "Yes. They both have that crunchy top with the pattern, and they're both sweet. It's funny that you mentioned San Francisco, Leo, because tiger bread became very popular there in the 1950s. I think it came to Hong Kong, too."
+        },
+        {
+          "sp": "Mi",
+          "t": "Hmm. I haven't heard that theory before. I'd like to thank you all for sharing your ideas. You know … I think it's interesting … the idea for the pineapple bun may or may not have come from somewhere else, but to me, it doesn't matter. It really doesn't matter at all. What matters is that people in Hong Kong perfected it. It's such a classic part of our cuisine in Hong Kong. No matter where it came from, it's a Hong Kong speciality."
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Where do the three interviewees think the pineapple bun came from?"
+        },
+        {
+          "type": "text",
+          "html": "在每张地图下方写出正确的字母（A–C）。<br><b>A.</b> Leo Wong　<b>B.</b> Olivia Thompson　<b>C.</b> Pauline Chan"
+        },
+        {
+          "type": "maplabel",
+          "items": [
+            {
+              "no": 22,
+              "img": "assets/mt56/map_shanghai.png",
+              "place": "Shanghai",
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "answer": "C",
+              "signal": "Pauline, Pauline Chan, right?",
+              "cloze": "the pineapple bun came originally from Shanghai.",
+              "ts": {
+                "signal": [
+                  82.82,
+                  84.9
+                ],
+                "answer": [
+                  89.02,
+                  92.06
+                ]
+              }
+            },
+            {
+              "no": 23,
+              "img": "assets/mt56/map_hongkong.png",
+              "place": "Hong Kong",
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "answer": "A",
+              "signal": "So, Leo Wong …",
+              "cloze": "You think the pineapple bun is from here in Hong Kong, don't you?",
+              "ts": {
+                "signal": [
+                  174.46,
+                  176.42
+                ],
+                "answer": [
+                  178.2,
+                  182.32
+                ]
+              }
+            },
+            {
+              "no": 24,
+              "img": "assets/mt56/map_netherlands.png",
+              "place": "the Netherlands",
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "answer": "B",
+              "signal": "Now, Olivia Thompson, where do you think they came from?",
+              "cloze": "I think they might be from the Netherlands.",
+              "ts": {
+                "signal": [
+                  236.2,
+                  240.54
+                ],
+                "answer": [
+                  243.32,
+                  245.54
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pineapple bun origin details"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Place",
+            "Details"
+          ],
+          "rows": [
+            [
+              {
+                "static": "Shanghai"
+              },
+              {
+                "fillgroup": [
+                  {
+                    "no": 25,
+                    "prefix": "Shanghai used to be a major trading port, so its cuisine (25)",
+                    "answer": [
+                      "has international influences"
+                    ],
+                    "signal": "Shanghai used to be a major trading port.",
+                    "cloze": "its cuisine has international influences.",
+                    "ts": {
+                      "signal": [
+                        106.4,
+                        109.34
+                      ],
+                      "answer": [
+                        111.22,
+                        114.08
+                      ]
+                    }
+                  },
+                  {
+                    "no": 26,
+                    "prefix": "Many people from Shanghai moved to Hong Kong during (26)",
+                    "answer": [
+                      "the Sino-Japanese War (in 1937)",
+                      "the Sino-Japanese War"
+                    ],
+                    "signal": "how did it get to Hong Kong, do you suppose?",
+                    "cloze": "many many people from Shanghai moved to Hong Kong during the Sino-Japanese War.",
+                    "ts": {
+                      "signal": [
+                        124.26,
+                        126.62
+                      ],
+                      "answer": [
+                        128.4,
+                        134.6
+                      ]
+                    }
+                  },
+                  {
+                    "no": 27,
+                    "prefix": "The pineapple bun became popular in Hong Kong (27)",
+                    "answer": [
+                      "in the 1940s",
+                      "(soon afterwards) in the 1940s"
+                    ],
+                    "signal": "pineapple buns became popular in Hong Kong soon afterwards",
+                    "cloze": "pineapple buns became popular in Hong Kong soon afterwards, in the 1940s.",
+                    "ts": {
+                      "signal": [
+                        151.42,
+                        155.72
+                      ],
+                      "answer": [
+                        151.42,
+                        158.34
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "static": "Hong Kong"
+              },
+              {
+                "fillgroup": [
+                  {
+                    "no": 28,
+                    "prefix": "Bakeries specialize in pineapple buns because (28)",
+                    "answer": [
+                      "they are challenging / hard to make at home",
+                      "challenging to make at home"
+                    ],
+                    "signal": "bakeries here started specializing in pineapple buns",
+                    "cloze": "bakeries here started specializing in pineapple buns as they're challenging to make at home.",
+                    "ts": {
+                      "signal": [
+                        207.04,
+                        210.76
+                      ],
+                      "answer": [
+                        207.04,
+                        214.04
+                      ]
+                    }
+                  },
+                  {
+                    "no": 29,
+                    "prefix": "Pineapple buns spread across the world (29)",
+                    "answer": [
+                      "as people from Hong Kong moved to other countries / abroad",
+                      "as Hong Kong people moved abroad"
+                    ],
+                    "signal": "Now we see that pineapple buns are in other places",
+                    "cloze": "As people from Hong Kong moved to other countries, pineapple buns spread across the world.",
+                    "ts": {
+                      "signal": [
+                        215.78,
+                        219.26
+                      ],
+                      "answer": [
+                        222.52,
+                        228.98
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "static": "The Netherlands"
+              },
+              {
+                "fillgroup": [
+                  {
+                    "no": 30,
+                    "prefix": "The pineapple bun is (30)",
+                    "answer": [
+                      "similar to (Dutch) tiger bread",
+                      "like tiger bread"
+                    ],
+                    "signal": "there's a sweet bread called tiger bread",
+                    "cloze": "Tiger bread and pineapple buns are very similar.",
+                    "ts": {
+                      "signal": [
+                        251.98,
+                        254.24
+                      ],
+                      "answer": [
+                        256.9,
+                        260.82
+                      ]
+                    }
+                  },
+                  {
+                    "no": 31,
+                    "prefix": "This type of bread became very popular in San Francisco (31)",
+                    "answer": [
+                      "in the 1950s"
+                    ],
+                    "signal": "tiger bread became very popular there",
+                    "cloze": "tiger bread became very popular there in the 1950s.",
+                    "ts": {
+                      "signal": [
+                        274.08,
+                        277.16
+                      ],
+                      "answer": [
+                        274.08,
+                        279.0
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "fill",
+          "no": 32,
+          "label": "(32) What is Mindy's conclusion after hearing the three stories? Give a reason.",
+          "textarea": true,
+          "open": true,
+          "answer": [
+            "It doesn't matter where the pineapple bun came from, since Hong Kong people perfected it / made it a part of their cuisine"
+          ],
+          "signal": "the idea for the pineapple bun may or may not have come from somewhere else",
+          "cloze": "it doesn't matter at all. What matters is that people in Hong Kong perfected it.",
+          "ts": {
+            "signal": [
+              292.76,
+              297.84
+            ],
+            "answer": [
+              300.74,
+              307.74
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Radio programme on intangible cultural heritage",
+      "marks": 10,
+      "audio": "audio/mt56_task4.mp3",
+      "instructions": "Charlotte learnt that pineapple bun making is part of Hong Kong's 'intangible cultural heritage'. She is listening to a radio programme to learn more. Listen and answer the questions below. You do not need to answer in complete sentences.",
+      "tapescript": [
+        {
+          "sp": "He",
+          "t": "Welcome back to Hong Kong A.M. I'm your host Helen Yeung. With us today is Dr Samuel Li who is a professor of history at Kowloon University. He has a new book on Hong Kong's intangible cultural heritage. Welcome, Dr Li."
+        },
+        {
+          "sp": "Dr",
+          "t": "Thank you."
+        },
+        {
+          "sp": "He",
+          "t": "So, Dr Li, if you wouldn't mind, could you start by defining for us what exactly intangible cultural heritage is?"
+        },
+        {
+          "sp": "Dr",
+          "t": "Absolutely. It's a bit of an abstract idea, isn't it? So, intangible cultural heritage includes the practices, knowledge and skills that are important to a place's culture. Think of everything that makes up the culture of a place that isn't a physical thing. So, ignore monuments, museums and so on."
+        },
+        {
+          "sp": "He",
+          "t": "Ah, practices, knowledge and skills … so, things like Cantonese opera, paper crafting …"
+        },
+        {
+          "sp": "Dr",
+          "t": "The Tin Hau Festival, pineapple bun making, herbal tea … The list goes on and on."
+        },
+        {
+          "sp": "He",
+          "t": "I know that there's a list of intangible cultural heritage for Hong Kong, but is it divided into different areas?"
+        },
+        {
+          "sp": "Dr",
+          "t": "It is indeed. Let me give you three examples of different areas. First, we have the performing arts. Cantonese opera, which you just mentioned, would of course fall into that category."
+        },
+        {
+          "sp": "He",
+          "t": "Right."
+        },
+        {
+          "sp": "Dr",
+          "t": "We also have traditional craftsmanship."
+        },
+        {
+          "sp": "He",
+          "t": "That would be paper crafting, and I suppose pineapple bun making, too."
+        },
+        {
+          "sp": "Dr",
+          "t": "That's exactly right. Finally, we have oral traditions and expressions. So, different types of storytelling, and so on. There are more areas, but that gives you an idea."
+        },
+        {
+          "sp": "He",
+          "t": "There are so many different things that add to our culture. How on Earth did the government come up with a list?"
+        },
+        {
+          "sp": "Dr",
+          "t": "It was a very long process, so they did their best to come up with an extensive and precise list. Rome wasn't built in a day, after all. The first step was to set up the Intangible Cultural Heritage Advisory Committee."
+        },
+        {
+          "sp": "He",
+          "t": "That's a bit of a mouthful! What was it again?"
+        },
+        {
+          "sp": "Dr",
+          "t": "It's called the Intangible Cultural Heritage Advisory Committee."
+        },
+        {
+          "sp": "He",
+          "t": "OK, so the government set that up. Then what happened?"
+        },
+        {
+          "sp": "Dr",
+          "t": "After that, they completed a three-year long survey."
+        },
+        {
+          "sp": "He",
+          "t": "Wow. They really did take their time."
+        },
+        {
+          "sp": "Dr",
+          "t": "Well, it was a very big job, of course. They had to research every area of the city to find important practices. So after that, they got the public involved. They had public consultations for four months."
+        },
+        {
+          "sp": "He",
+          "t": "It's good that everyone had an opportunity to have their say."
+        },
+        {
+          "sp": "Dr",
+          "t": "I agree. Absolutely."
+        },
+        {
+          "sp": "He",
+          "t": "So, you write extensively about our city's intangible cultural heritage in your book."
+        },
+        {
+          "sp": "Dr",
+          "t": "Yes. There's a section on each of the items on the list. My favourite ones to write about were the food items."
+        },
+        {
+          "sp": "He",
+          "t": "My goodness. How many items are there, exactly?"
+        },
+        {
+          "sp": "Dr",
+          "t": "Food items? Forty-four."
+        },
+        {
+          "sp": "He",
+          "t": "No, in total."
+        },
+        {
+          "sp": "Dr",
+          "t": "Oh, in total, there are four hundred and eighty items on the list."
+        },
+        {
+          "sp": "He",
+          "t": "And forty-four of those four hundred and eighty are related to food? I suppose that cuisine is a huge part of our culture here, doesn't it?"
+        },
+        {
+          "sp": "Dr",
+          "t": "Absolutely. It wouldn't be Hong Kong without Cantonese cuisine!"
+        },
+        {
+          "sp": "He",
+          "t": "Your book must be very long if it covers each of those items."
+        },
+        {
+          "sp": "Dr",
+          "t": "It is a long work, yes. Nearly one thousand, in fact."
+        },
+        {
+          "sp": "He",
+          "t": "Obviously, you think the intangible cultural heritage list is very important."
+        },
+        {
+          "sp": "Dr",
+          "t": "I do, yes. I think it was a necessary thing for Hong Kong to create because it helps to define and protect our culture."
+        },
+        {
+          "sp": "He",
+          "t": "That is an important job. So, now that the list is set, it can just stay like that for the long term, right? No one can ever change it …"
+        },
+        {
+          "sp": "Dr",
+          "t": "Actually, I have to disagree with you there. I think the list should change over time. You see, culture doesn't stay the same. Culture grows and changes, and thus, I believe that the list should, too. Perhaps we won't want to remove things, but we certainly might want to add them."
+        },
+        {
+          "sp": "He",
+          "t": "An excellent point. Thank you so much for the discussion, Dr Li."
+        }
+      ],
+      "blocks": [
+        {
+          "type": "fill",
+          "no": 33,
+          "label": "According to Dr Li, what is 'intangible cultural heritage'? (33)",
+          "textarea": true,
+          "answer": [
+            "(the) practices, knowledge and skills that are important to a place's culture",
+            "practices, knowledge and skills"
+          ],
+          "signal": "could you start by defining for us what exactly intangible cultural heritage is?",
+          "cloze": "intangible cultural heritage includes the practices, knowledge and skills that are important to a place's culture.",
+          "ts": {
+            "signal": [
+              96.39,
+              103.79
+            ],
+            "answer": [
+              110.47,
+              119.95
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "What are three examples of areas of intangible cultural heritage?"
+        },
+        {
+          "type": "fill",
+          "no": 34,
+          "label": "(34)",
+          "answer": [
+            "performing arts"
+          ],
+          "signal": "Let me give you three examples of different areas.",
+          "cloze": "First, we have the performing arts.",
+          "ts": {
+            "signal": [
+              158.31,
+              161.25
+            ],
+            "answer": [
+              162.31,
+              164.83
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 35,
+          "label": "(35)",
+          "answer": [
+            "traditional craftsmanship"
+          ],
+          "signal": "We also have",
+          "cloze": "We also have traditional craftsmanship.",
+          "ts": {
+            "signal": [
+              172.73,
+              173.75
+            ],
+            "answer": [
+              172.73,
+              175.19
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 36,
+          "label": "(36)",
+          "answer": [
+            "oral traditions and expressions"
+          ],
+          "signal": "Finally, we have",
+          "cloze": "Finally, we have oral traditions and expressions.",
+          "ts": {
+            "signal": [
+              184.73,
+              185.93
+            ],
+            "answer": [
+              184.73,
+              187.73
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "How did the government come up with the list?"
+        },
+        {
+          "type": "fill",
+          "no": 37,
+          "label": "1. (37)",
+          "answer": [
+            "set up the Intangible Cultural Heritage Advisory Committee",
+            "set up the Advisory Committee"
+          ],
+          "signal": "The first step was to",
+          "cloze": "The first step was to set up the Intangible Cultural Heritage Advisory Committee.",
+          "ts": {
+            "signal": [
+              216.51,
+              218.03
+            ],
+            "answer": [
+              216.51,
+              221.79
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 38,
+          "label": "2. (38)",
+          "answer": [
+            "completed a three-year (long) survey",
+            "three-year survey"
+          ],
+          "signal": "Then what happened?",
+          "cloze": "After that, they completed a three-year long survey.",
+          "ts": {
+            "signal": [
+              236.69,
+              237.61
+            ],
+            "answer": [
+              238.35,
+              242.39
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 39,
+          "label": "3. (39)",
+          "answer": [
+            "had public consultations (for four months)",
+            "public consultations"
+          ],
+          "signal": "they got the public involved",
+          "cloze": "They had public consultations for four months.",
+          "ts": {
+            "signal": [
+              257.09,
+              258.11
+            ],
+            "answer": [
+              259.05,
+              261.75
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 40,
+          "label": "How many items are on the list, and how many are related to food? (40)",
+          "textarea": true,
+          "answer": [
+            "480 items (on the list), 44 are related to food",
+            "480 in total and 44 food"
+          ],
+          "signal": "in total, there are",
+          "cloze": "in total, there are four hundred and eighty items on the list.",
+          "ts": {
+            "signal": [
+              293.95,
+              295.69
+            ],
+            "answer": [
+              293.95,
+              299.31
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 41,
+          "label": "According to Dr Li, why is the list so important? (41)",
+          "textarea": true,
+          "answer": [
+            "it helps to define and protect (Hong Kong) culture"
+          ],
+          "signal": "you think the intangible cultural heritage list is very important.",
+          "cloze": "it helps to define and protect our culture.",
+          "ts": {
+            "signal": [
+              325.21,
+              330.17
+            ],
+            "answer": [
+              336.65,
+              339.93
+            ]
+          }
+        },
+        {
+          "type": "fill",
+          "no": 42,
+          "label": "Does Dr Li think the list should change over time? Why or why not? (42)",
+          "textarea": true,
+          "answer": [
+            "yes, because culture grows and changes"
+          ],
+          "signal": "it can just stay like that for the long term, right?",
+          "cloze": "I think the list should change over time. You see, culture doesn't stay the same. Culture grows and changes.",
+          "ts": {
+            "signal": [
+              346.17,
+              349.01
+            ],
+            "answer": [
+              354.99,
+              363.29
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

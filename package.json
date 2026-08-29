@@ -1,0 +1,32 @@
+{
+  "name": "dse-listening-trainer",
+  "version": "0.2.0",
+  "private": true,
+  "description": "DSE Paper 3 Part A 听力训练系统：学生端做题/精听 + 教师端报表 + 试卷提取工具链",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed:demo": "node scripts/seed-demo.js",
+    "new:paper": "node scripts/new-paper.js",
+    "validate:paper": "node scripts/validate-paper.js",
+    "import:paper": "node scripts/import-paper.js",
+    "auto:ts": "node scripts/auto-ts.js",
+    "align": "node scripts/audio-align.js",
+    "split": "node scripts/split-audio.js",
+    "fillts": "node scripts/fill-ts.js",
+    "oss:upload": "node scripts/oss.js",
+    "test:api": "node scripts/test-api.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@napi-rs/canvas": "^1.0.8",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "ali-oss": "^6.23.0",
+    "express": "^4.21.2",
+    "multer": "^2.3.0",
+    "pdfjs-dist": "^3.11.174",
+    "tesseract.js": "^5.1.1"
+  }
+}
